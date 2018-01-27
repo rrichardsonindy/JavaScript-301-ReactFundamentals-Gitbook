@@ -46,7 +46,7 @@ After creating the application in your terminal open up VS Code and open the rea
 ### Create Directories
 As you open the app, you have a few simple set up tasks:
 
-Please right click on the <b>src</b> folder and add 3 folders: 'components', 'constants', and 'styles'. 
+Please right click on the <b>src</b> folder and add 4 folders: 'assets', 'components', 'constants', and 'styles'. 
 
 ### Current Project
 Your project should currently directories should have the following structure:

@@ -1,5 +1,5 @@
 # SASS Setup
-Better to set up SASS early than wait....TODO: a little more text here.
+Better to set up SASS early than wait. This swerves us away from jumping straight into React Fundamentals, but it's just wiser and better to take the time up front to get our environment set up.
 
 ### Adding a CSS Preprocessor (Sass, Less etc.)
 
@@ -9,39 +9,138 @@ Install the command-line interface for Sass:
 npm install --save node-sass-chokidar
 ```
 
-Then, in `package.json`, add the following lines to `scripts`:
+### Change package.json
+In `package.json`, add the following lines to `scripts`:
 
 ```diff
    "scripts": {
-+    "build-css": "node-sass-chokidar src/ -o src/",
-+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
++    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
++    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
      "start": "react-scripts start",
      "build": "react-scripts build",
      "test": "react-scripts test --env=jsdom",
 ```
 
-Now you can rename `src/App.css` to `src/App.scss` and run `npm run watch-css`. The watcher will find every Sass file in `src` subdirectories, and create a corresponding CSS file next to it, in our case overwriting `src/App.css`. Since `src/App.js` still imports `src/App.css`, the styles become a part of your application. You can now edit `src/App.scss`, and `src/App.css` will be regenerated.
+### SCSS File Set up
 
-To enable importing files without using relative paths, you can add the  `--include-path` option to the command in `package.json`.
+Follow the steps closely below. If you get lost, refer to the source code for this branch and go through a second/third time:
+1. In `index.js`, delete the import statement for `index.css`.
+2. Delete the `index.css` file. 
+3. In `App.js`, delete all of the code in the file and replace it with this code:
+  ```js
+  import React, { Component } from 'react';
+  import './App.css';
 
-```
-"build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-"watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-```
+  class App extends Component {
+    render() {
+      return (
+        <div>
+          <h1>Hello React</h1>
+        </div>
+      );
+    }
+  }
 
-This will allow you to do imports like
+  export default App;
+  ```
+4. Keep the file, but delete all the code from the `App.css`. We will leave the file empty for now. 
+5. In the <b>/src</b> folder create an `App.scss` file. 
+6. In the <b>/styles</b> folder create two files: `_body.scss` and `_variables.scss`. 
+7. In the newly created `styles/_body.scss` file, add the following code:
+  ```scss
+  /****************************
+  Body Section
+  ****************************/
+  body {
+      padding: 15px;
+      background-color: $red;
+  }
+  ```
 
-```scss
-@import 'styles/_colors.scss'; // assuming a styles directory under src/
-```
+8. Copy and paste the following starter code to <b>`styles/_variables.scss`</b>. Note that these are the Eleven Fifty colors(you can use your own later)
 
-At this point you might want to remove all CSS files from the source control, and add `src/**/*.css` to your `.gitignore` file. It is generally a good practice to keep the build products outside of the source control.
+  ```scss
+  /****************** 
+  Variables  
+  ******************/
+  /*EFA Color pallete*/
 
-As a final step, you may find it convenient to run `watch-css` automatically with `npm start`, and run `build-css` as a part of `npm run build`. You can use the `&&` operator to execute two scripts sequentially. However, there is no cross-platform way to run two scripts in parallel, so we will install a package for this:
+  $red: #D9514E;
+  $orange: #f79569;
+  $yellow: #F6D57A;
+  $green: #8acfba;
+  $blue: #86bad3;
+  $blue-green: #9AD0D5;
+  $purple: #A992BC;
+  $brown: #725b4d;
+  $gray: #53565A;
+  $black: #000 !default;
+  ```
 
-```sh
-npm install --save npm-run-all
-```
+9. In `src/App.scss` add the following imports:
+
+  ```scss
+  @import "styles/variables.scss";
+  @import "styles/body.scss";
+  ```
+
+10. Double check your structure. You should see have the following structure inside the <b>/src</b> folder: 
+  ```
+  └── src
+      └── assets
+      └── components
+      └── constants
+      └── styles
+          └── _body.scss
+          └── _variables.scss
+      └── App.css
+      └── App.js
+      └── App.scss
+      └── App.test.js
+      └── index.js
+      └── logo.svg
+      └── registerServiceWorker.js
+  ```
+
+
+### Compiling the SCSS
+
+Now we'll run watch-css to see changes in our SCSS files. Run the following command: 
+
+  ```sh
+  npm run watch-css
+  ```
+
+You should see the following on your screen:
+![watch-css](./assets/2-scss-setup-red.PNG)
+
+Just to test our code, let's change the background-color to $blue:
+  ```scss
+    /****************************
+    Body Section
+    ****************************/
+    body {
+        padding: 15px;
+        background-color: $blue;
+    }
+  ```
+
+It should recompile automatically and render the following:
+
+![watch](./assets/2-scss-setup-blue.PNG)
+
+Also, it is important to note that this code is being added to our App.css file, and all of the CSS for the app will be pipelining there.
+
+![watch](./assets/2-scss-app-file.PNG)
+
+
+### Compiling when Running
+
+Having to run this way will get obnoxious.  We need to fix our app so that it compiles the SCSS files and runs the `watch-css` automatically with `npm start`:
+
+  ```sh
+  npm install --save npm-run-all
+  ```
 
 Then we can change `start` and `build` scripts to include the CSS preprocessor commands:
 
@@ -60,11 +159,10 @@ Then we can change `start` and `build` scripts to include the CSS preprocessor c
    }
 ```
 
-Now running `npm start` and `npm run build` also builds Sass files.
+Now when we run `npm start`, it will run the app and bring our SCSS files into our App.css file. Try changing the background color to green after running `npm start`. 
 
-### Source
+### .gitignore
+Remove all CSS files from the source control by adding `src/**/*.css` to the bottom of your `.gitignore` file. It is generally a good practice to keep the build products outside of the source control.
 
-The above set up comes from Facebook's Incubator site.
-https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc
 
-* [3 - Site-Setup](3-Site-Setup.md)
+* [3 - reactstrap Setup](3-reactstrap.md)

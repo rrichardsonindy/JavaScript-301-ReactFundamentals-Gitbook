@@ -3,7 +3,7 @@
 * [App Overview](README.md)
 * [1 - GettingStarted](1-GettingStarted.md)
 * [2 - Sass Setup](2-Sass-Setup.md)
-* [3 - Site Setup](3-Site-Setup.md)
+* [3 - React Strap Setup](3-reactstrap.md)
 * [4 - Components](4-Components.md)
 * [5 - Functional Components](5-Functional-Components.md)
 * [6 - JSX](6-jsx.md)
