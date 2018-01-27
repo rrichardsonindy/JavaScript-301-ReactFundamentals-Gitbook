@@ -1,0 +1,396 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2 - Sass Setup · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3-Site-Setup.html" />
+    
+    
+    <link rel="prev" href="1-GettingStarted.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    App Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1-GettingStarted.html">
+            
+                <a href="1-GettingStarted.html">
+            
+                    
+                    1 - GettingStarted
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="2-Sass-Setup.html">
+            
+                <a href="2-Sass-Setup.html">
+            
+                    
+                    2 - Sass Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3-Site-Setup.html">
+            
+                <a href="3-Site-Setup.html">
+            
+                    
+                    3 - Site Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4-Components.html">
+            
+                <a href="4-Components.html">
+            
+                    
+                    4 - Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5-Functional-Components.html">
+            
+                <a href="5-Functional-Components.html">
+            
+                    
+                    5 - Functional Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6-jsx.html">
+            
+                <a href="6-jsx.html">
+            
+                    
+                    6 - JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7-props.html">
+            
+                <a href="7-props.html">
+            
+                    
+                    7 - props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8-Class-Components.html">
+            
+                <a href="8-Class-Components.html">
+            
+                    
+                    8 - Class Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9-State.html">
+            
+                <a href="9-State.html">
+            
+                    
+                    9 - State
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >2 - Sass Setup</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sass-setup">SASS Setup</h1>
+<p>Better to set up SASS early than wait....TODO: a little more text here.</p>
+<h3 id="adding-a-css-preprocessor-sass-less-etc">Adding a CSS Preprocessor (Sass, Less etc.)</h3>
+<p>Install the command-line interface for Sass:</p>
+<pre><code class="lang-sh">npm install --save node-sass-chokidar
+</code></pre>
+<p>Then, in <code>package.json</code>, add the following lines to <code>scripts</code>:</p>
+<pre><code class="lang-diff">   &quot;scripts&quot;: {
+<span class="hljs-addition">+    &quot;build-css&quot;: &quot;node-sass-chokidar src/ -o src/&quot;,</span>
+<span class="hljs-addition">+    &quot;watch-css&quot;: &quot;npm run build-css &amp;&amp; node-sass-chokidar src/ -o src/ --watch --recursive&quot;,</span>
+     &quot;start&quot;: &quot;react-scripts start&quot;,
+     &quot;build&quot;: &quot;react-scripts build&quot;,
+     &quot;test&quot;: &quot;react-scripts test --env=jsdom&quot;,
+</code></pre>
+<p>Now you can rename <code>src/App.css</code> to <code>src/App.scss</code> and run <code>npm run watch-css</code>. The watcher will find every Sass file in <code>src</code> subdirectories, and create a corresponding CSS file next to it, in our case overwriting <code>src/App.css</code>. Since <code>src/App.js</code> still imports <code>src/App.css</code>, the styles become a part of your application. You can now edit <code>src/App.scss</code>, and <code>src/App.css</code> will be regenerated.</p>
+<p>To enable importing files without using relative paths, you can add the  <code>--include-path</code> option to the command in <code>package.json</code>.</p>
+<pre><code>&quot;build-css&quot;: &quot;node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/&quot;,
+&quot;watch-css&quot;: &quot;npm run build-css &amp;&amp; node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive&quot;,
+</code></pre><p>This will allow you to do imports like</p>
+<pre><code class="lang-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;styles/_colors.scss&apos;</span>; <span class="hljs-comment">// assuming a styles directory under src/</span>
+</code></pre>
+<p>At this point you might want to remove all CSS files from the source control, and add <code>src/**/*.css</code> to your <code>.gitignore</code> file. It is generally a good practice to keep the build products outside of the source control.</p>
+<p>As a final step, you may find it convenient to run <code>watch-css</code> automatically with <code>npm start</code>, and run <code>build-css</code> as a part of <code>npm run build</code>. You can use the <code>&amp;&amp;</code> operator to execute two scripts sequentially. However, there is no cross-platform way to run two scripts in parallel, so we will install a package for this:</p>
+<pre><code class="lang-sh">npm install --save npm-run-all
+</code></pre>
+<p>Then we can change <code>start</code> and <code>build</code> scripts to include the CSS preprocessor commands:</p>
+<pre><code class="lang-diff">   &quot;scripts&quot;: {
+     &quot;build-css&quot;: &quot;node-sass-chokidar src/ -o src/&quot;,
+     &quot;watch-css&quot;: &quot;npm run build-css &amp;&amp; node-sass-chokidar src/ -o src/ --watch --recursive&quot;,
+<span class="hljs-deletion">-    &quot;start&quot;: &quot;react-scripts start&quot;,</span>
+<span class="hljs-deletion">-    &quot;build&quot;: &quot;react-scripts build&quot;,</span>
+<span class="hljs-addition">+    &quot;start-js&quot;: &quot;react-scripts start&quot;,</span>
+<span class="hljs-addition">+    &quot;start&quot;: &quot;npm-run-all -p watch-css start-js&quot;,</span>
+<span class="hljs-addition">+    &quot;build-js&quot;: &quot;react-scripts build&quot;,</span>
+<span class="hljs-addition">+    &quot;build&quot;: &quot;npm-run-all build-css build-js&quot;,</span>
+     &quot;test&quot;: &quot;react-scripts test --env=jsdom&quot;,
+     &quot;eject&quot;: &quot;react-scripts eject&quot;
+   }
+</code></pre>
+<p>Now running <code>npm start</code> and <code>npm run build</code> also builds Sass files.</p>
+<h3 id="source">Source</h3>
+<p>The above set up comes from Facebook&apos;s Incubator site.
+<a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc" target="_blank">https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc</a></p>
+<ul>
+<li><a href="3-Site-Setup.html">3 - Site-Setup</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1-GettingStarted.html" class="navigation navigation-prev " aria-label="Previous page: 1 - GettingStarted">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3-Site-Setup.html" class="navigation navigation-next " aria-label="Next page: 3 - Site Setup">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2 - Sass Setup","level":"1.3","depth":1,"next":{"title":"3 - Site Setup","level":"1.4","depth":1,"path":"3-Site-Setup.md","ref":"3-Site-Setup.md","articles":[]},"previous":{"title":"1 - GettingStarted","level":"1.2","depth":1,"path":"1-GettingStarted.md","ref":"1-GettingStarted.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2-Sass-Setup.md","mtime":"2018-01-27T14:34:33.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-27T14:17:54.701Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
