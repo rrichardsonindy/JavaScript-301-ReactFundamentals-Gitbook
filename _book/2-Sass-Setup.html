@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="3-reactstrap.html" />
+    <link rel="next" href="3-Project-Layout.html" />
     
     
     <link rel="prev" href="1-GettingStarted.html" />
@@ -128,12 +128,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="3-reactstrap.html">
+        <li class="chapter " data-level="1.4" data-path="3-Project-Layout.html">
             
-                <a href="3-reactstrap.html">
+                <a href="3-Project-Layout.html">
             
                     
-                    3 - React Strap Setup
+                    3 - Project Setup
             
                 </a>
             
@@ -365,13 +365,16 @@ Variables
     Body Section
     ****************************/</span>
     <span class="hljs-selector-tag">body</span> {
-        <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span>;
-        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+      <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span>;
+      <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
+      <span class="hljs-attribute">color</span>: white;
+      <span class="hljs-attribute">font</span>: Belleza;
     }
 </code></pre>
 <p>It should recompile automatically and render the following:</p>
 <p><img src="assets/2-scss-setup-blue.PNG" alt="watch"></p>
-<p>Also, it is important to note that this code is being added to our App.css file, and all of the CSS for the app will be pipelining there.</p>
+<p>Go aheadh and change the background back to white when you 
+Also, it is important to note that this code is being added to our App.css file, and all of the CSS for the app will be pipelining there.</p>
 <p><img src="assets/2-scss-app-file.PNG" alt="watch"></p>
 <h3 id="compiling-when-running">Compiling when Running</h3>
 <p>Having to run this way will get obnoxious.  We need to fix our app so that it compiles the SCSS files and runs the <code>watch-css</code> automatically with <code>npm start</code>:</p>
@@ -391,11 +394,15 @@ Variables
      &quot;eject&quot;: &quot;react-scripts eject&quot;
    }
 </code></pre>
-<p>Now when we run <code>npm start</code>, it will run the app and bring our SCSS files into our App.css file. Try changing the background color to green after running <code>npm start</code>. </p>
-<h3 id="gitignore">.gitignore</h3>
-<p>Remove all CSS files from the source control by adding <code>src/**/*.css</code> to the bottom of your <code>.gitignore</code> file. It is generally a good practice to keep the build products outside of the source control.</p>
+<p>Now when we run <code>npm start</code>, it will run the app and bring our SCSS files into our App.css file. Try the following:</p>
+<ol>
+<li>Run <code>npm start</code>.</li>
+<li>Change the background color to $green while running in the _body.scss file.</li>
+<li>Check the browser to make sure the color changes. </li>
+<li>Check the App.css file and see that the background color is now green.</li>
+</ol>
 <ul>
-<li><a href="3-reactstrap.html">3 - reactstrap Setup</a></li>
+<li><a href="3-reactstrap.md">3 - reactstrap Setup</a></li>
 </ul>
 
                                 
@@ -429,7 +436,7 @@ Variables
                 </a>
                 
                 
-                <a href="3-reactstrap.html" class="navigation navigation-next " aria-label="Next page: 3 - React Strap Setup">
+                <a href="3-Project-Layout.html" class="navigation navigation-next " aria-label="Next page: 3 - Project Setup">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -440,7 +447,7 @@ Variables
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2 - Sass Setup","level":"1.3","depth":1,"next":{"title":"3 - React Strap Setup","level":"1.4","depth":1,"path":"3-reactstrap.md","ref":"3-reactstrap.md","articles":[]},"previous":{"title":"1 - GettingStarted","level":"1.2","depth":1,"path":"1-GettingStarted.md","ref":"1-GettingStarted.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2-Sass-Setup.md","mtime":"2018-01-27T20:56:14.676Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-27T20:47:15.909Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2 - Sass Setup","level":"1.3","depth":1,"next":{"title":"3 - Project Setup","level":"1.4","depth":1,"path":"3-Project-Layout.md","ref":"3-Project-Layout.md","articles":[]},"previous":{"title":"1 - GettingStarted","level":"1.2","depth":1,"path":"1-GettingStarted.md","ref":"1-GettingStarted.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2-Sass-Setup.md","mtime":"2018-01-29T18:22:45.599Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-29T18:33:12.822Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

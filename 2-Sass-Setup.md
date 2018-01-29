@@ -120,8 +120,10 @@ Just to test our code, let's change the background-color to $blue:
     Body Section
     ****************************/
     body {
-        padding: 15px;
-        background-color: $blue;
+      padding: 15px;
+      background-color: $blue;
+      color: white;
+      font: Belleza;
     }
   ```
 
@@ -129,6 +131,7 @@ It should recompile automatically and render the following:
 
 ![watch](./assets/2-scss-setup-blue.PNG)
 
+Go aheadh and change the background back to white when you 
 Also, it is important to note that this code is being added to our App.css file, and all of the CSS for the app will be pipelining there.
 
 ![watch](./assets/2-scss-app-file.PNG)
@@ -159,10 +162,11 @@ Then we can change `start` and `build` scripts to include the CSS preprocessor c
    }
 ```
 
-Now when we run `npm start`, it will run the app and bring our SCSS files into our App.css file. Try changing the background color to green after running `npm start`. 
-
-### .gitignore
-Remove all CSS files from the source control by adding `src/**/*.css` to the bottom of your `.gitignore` file. It is generally a good practice to keep the build products outside of the source control.
+Now when we run `npm start`, it will run the app and bring our SCSS files into our App.css file. Try the following:
+1. Run `npm start`.
+2. Change the background color to $green while running in the _body.scss file.
+3. Check the browser to make sure the color changes. 
+4. Check the App.css file and see that the background color is now green.
 
 
 * [3 - reactstrap Setup](3-reactstrap.md)
