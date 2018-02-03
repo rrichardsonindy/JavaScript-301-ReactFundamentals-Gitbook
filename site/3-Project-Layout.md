@@ -149,7 +149,7 @@ const Sidebar = () => (
         <li><Link to="/lifecycle">LifeCycle</Link></li>
         <li><Link to="/willmount">willMount</Link></li>
         <li><Link to="/video">Video</Link></li>
-        <li><Link to="/todo">To Do App</Link></li>
+        <li><Link to="/concepts">React Concepts App</Link></li>
         <li><Link to="/timer">Timer</Link></li>
         <li><Link to="/willmountadv">Clock</Link></li>
         <li><Link to="/comment">Comment</Link></li>
@@ -353,7 +353,3 @@ Finally, delete the code from `App.js` and replace it with the following code:
 At this point, you should be able to run `npm start` and get the following:
 ![starter-app](./assets/3-app-starter.PNG)
 
-
-
-
-[4 - Components](4-Components.md) 
