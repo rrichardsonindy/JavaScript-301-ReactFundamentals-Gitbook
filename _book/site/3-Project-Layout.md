@@ -1,3 +1,5 @@
+TODO: Proof and Build
+
 #Project Layout
 1. Set up the layout of our tutorial site, including the routing for it using React Router.
 2. We'll use a library called reactstrap for easy use of Bootstrap components in our project.
@@ -138,23 +140,9 @@ const Sidebar = () => (
         <li><Link to="/">Home</Link></li>
         <li><Link to="/components">Components</Link></li>
         <li><Link to="/functionalcomponent">Functional Component</Link></li>
-        <li><Link to="/fatarrow">Fat Arrow</Link></li>
-        <li><Link to="/classcomponent">Class Component</Link></li>
-        <li><Link to="/jsx">JSX</Link></li>
-        <li><Link to="/props">Props</Link></li>
-        <li><Link to="/propssimpledemo">PropsSimpleDemo</Link></li>
-        <li><Link to="/state">State</Link></li>
-        <li><Link to="/setstate">setState</Link></li>
-        <li><Link to="/constructor">Constructor</Link></li>
-        <li><Link to="/lifecycle">LifeCycle</Link></li>
-        <li><Link to="/willmount">willMount</Link></li>
-        <li><Link to="/video">Video</Link></li>
-        <li><Link to="/concepts">React Concepts App</Link></li>
-        <li><Link to="/timer">Timer</Link></li>
-        <li><Link to="/willmountadv">Clock</Link></li>
-        <li><Link to="/comment">Comment</Link></li>
-        <li><Link to="/friendform">Friend Form</Link></li>
-        <li><Link to="/names">Names</Link></li>
+
+        ************MORE LINKS WILL BE ADDED TO THIS LIST AS YOU BUILD**************
+      
       </ul>
     </div>
     <div>

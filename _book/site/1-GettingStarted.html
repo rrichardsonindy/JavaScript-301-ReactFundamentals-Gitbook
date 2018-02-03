@@ -734,38 +734,43 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="getting-started-with-react">Getting Started with React</h1>
+                                <p>TODO: Proof and Build</p>
+<h1 id="getting-started-with-react">Getting Started with React</h1>
 <p>To get stared with React, we&apos;ll use Create React App. Starting out with Create React App allows us to get started locally with React without having to set up build configurations. Create React App works on macOS, Windows, and Linux. We just need to have Node.js installed.</p>
 <p>If something doesn&#x2019;t work, please contact your instructor immediately.</p>
 <h3 id="get-in-a-directory">Get in a directory</h3>
-<p>Go inside of your projects directory or create a new directory that is not already inside of a git repository. You could call this React-Library. We called ours JavaScript-301-ReactLibrary. It&apos;s up to you.</p>
+<p>Go inside of your projects directory or create a new directory that is not already inside of a git repository. You could call this React-Library. We called ours JavaScript-301-ReactLibrary, but you can just call yours ReactLibrary.</p>
 <pre><code class="lang-sh">mkdir ReactLibrary
 <span class="hljs-built_in">cd</span> ReactLibrary
 </code></pre>
+<p>At this phase go ahead and set up a remote repository with a README.md file. Go ahead and push your README.md file to the remote.</p>
 <h3 id="install-an-instance-of-create-react-app">Install an instance of Create React App</h3>
-<p>Now go through the following steps to create your initial app, using Facebook&apos;s Create React App starter. Note that the npx command is <a href="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b" target="_blank">correct</a>.</p>
-<pre><code class="lang-sh">npx create-react-app react-fundamentals
-<span class="hljs-built_in">cd</span> react-fundamentals
+<p>Open up the starter app inside of VS Code and open the terminal. We&apos;ll now go through the following steps to create your initial app, using Facebook&apos;s Create React App starter. Note that the npx command is <a href="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b" target="_blank">correct</a>. </p>
+<pre><code class="lang-sh">ReactLibrary&gt; npx create-react-app react-fundamentals
+ReactLibrary&gt; <span class="hljs-built_in">cd</span> react-fundamentals
 </code></pre>
 <h3 id="run-create-react-app">Run Create React App</h3>
-<p>After the app finishing loading, you can run the app locally by using the following command:</p>
+<p>After the app finishes loading, you can run the app locally by using the following command:</p>
 <pre><code class="lang-sh">npm start
 </code></pre>
 <p>Open <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to view it in the browser. You should see the starter app:
-<img src="assets/1-cra-initial.PNG" alt="Initial Run"></p>
-<p>Here&apos;s Facebook&apos;s starter screenshot for more help. Note that we are calling ours React Fundamentals:</p>
+<img src="../assets/1-cra-initial.PNG" alt="Initial Run"></p>
+<p>Here&apos;s Facebook&apos;s starter screenshot for more help. Note that they use the generic name <code>my-app</code> for their app:</p>
 <p align="center">
 <img src="https://cdn.rawgit.com/facebookincubator/create-react-app/27b42ac/screencast.svg" width="600" alt="npm start">
 </p>
 
 
 <h3 id="app-orientation">App Orientation</h3>
-<p>After creating the application in your terminal open up VS Code and open the react-fundamentals folder that contains the app. Take a look at the files in the src folder and get an idea of where things are located. By no means do you have to know what is happening right now. For the most part, we&apos;ll be working in the src folder. <br></p>
+<p>After creating the application in your terminal, do the following: </p>
+<ol>
+<li>Open up the react-fundamentals folder that contains the app.</li>
+<li>Take a look at the files in the src folder and get an idea of where things are located. By no means do you have to know what is happening right now. Know that for the most part, we&apos;ll be working in the src folder. <br></li>
+</ol>
 <h3 id="create-directories">Create Directories</h3>
 <p>As you open the app, you have a few simple set up tasks:</p>
 <p>Please right click on the <b>src</b> folder and add 4 folders: &apos;assets&apos;, &apos;components&apos;, &apos;constants&apos;, and &apos;styles&apos;. </p>
-<h3 id="current-project">Current Project</h3>
-<p>Your project should currently directories should have the following structure:</p>
+<p>The project will then have the following structure:</p>
 <pre><code>react-library
 &#x251C;&#x2500;&#x2500; README.md
 &#x251C;&#x2500;&#x2500; node_modules
@@ -833,7 +838,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.0 - GettingStarted","level":"1.2.2","depth":2,"next":{"title":"2.0 - Sass Setup","level":"1.2.3","depth":2,"path":"site/2-Sass-Setup.md","ref":"site/2-Sass-Setup.md","articles":[]},"previous":{"title":"0.0 - React Rationale","level":"1.2.1","depth":2,"path":"site/0-ReactRationale.md","ref":"site/0-ReactRationale.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"site/1-GettingStarted.md","mtime":"2018-02-03T01:28:51.394Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-03T12:56:55.495Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.0 - GettingStarted","level":"1.2.2","depth":2,"next":{"title":"2.0 - Sass Setup","level":"1.2.3","depth":2,"path":"site/2-Sass-Setup.md","ref":"site/2-Sass-Setup.md","articles":[]},"previous":{"title":"0.0 - React Rationale","level":"1.2.1","depth":2,"path":"site/0-ReactRationale.md","ref":"site/0-ReactRationale.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"site/1-GettingStarted.md","mtime":"2018-02-03T14:59:19.339Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-03T14:59:36.847Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

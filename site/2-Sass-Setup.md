@@ -1,3 +1,5 @@
+TODO: Proof and Build
+
 # SASS Setup
 Better to set up SASS early than wait. This swerves us away from jumping straight into React Fundamentals, but it's just wiser and better to take the time up front to get our environment set up.
 
