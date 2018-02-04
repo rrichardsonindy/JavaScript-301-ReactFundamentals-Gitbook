@@ -1,5 +1,6 @@
-# React Intro
-###What is it?
+# Part 1: Intro and Set up
+
+### React Intro
 React is a JavaScript library. Much like jQuerym it is a single file, created and maintained by Facebook. It is component-based, which means that you can use Components to describe your desired outcome for very specific areas on the webpage. For instance, we might have a component for nav, footer, main, counter, etc. 
 
 ###Rationale

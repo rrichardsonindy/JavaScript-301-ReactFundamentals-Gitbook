@@ -178,4 +178,4 @@ Now when we run `npm start`, it will run the app and bring our SCSS files into o
 5. Change the color back when it works.
 
 
-* [3 - reactstrap Setup](3-reactstrap.md)
+* [3 - npm packages](3-npm-packages.md)
