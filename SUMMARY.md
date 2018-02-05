@@ -10,7 +10,7 @@
 * [Part 2: Concepts](concepts/0.0-Concepts.md)
     * [1.0: Functional Components](concepts/1_FunctionalComponents/1.0-Functional-Components.md)
     * [1.1: Calling Functional Components](concepts/1_FunctionalComponents/1.1-Functional-Component-Calling.md)
-    * [1.2: Challenge Answer](concepts/1_FunctionalComponents/1.2-Functional-Component-SingleElementRule.md)
+    * [1.2: Single Element Rule](concepts/1_FunctionalComponents/1.2-Functional-Component-SingleElementRule.md)
     * [1.3: Arrow Functions](concepts/1_FunctionalComponents/1.3-Functional-Arrow-Functions.md)
     * [1.4: Functional Components Expanded](concepts/1_FunctionalComponents/1.4-Functional-Component-Expanded.md)
     * [1.5: Functional Component Challenge](concepts/1_FunctionalComponents/1.5-Functional-Component-Challenge.md)
