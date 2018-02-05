@@ -1,0 +1,1540 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.0: Project Layout · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../concepts/0.0-Concepts.html" />
+    
+    
+    <link rel="prev" href="3-npm-packages.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    App Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0-ReactRationale.html">
+            
+                <a href="0-ReactRationale.html">
+            
+                    
+                    Part 1: Intro and Setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1-GettingStarted.html">
+            
+                <a href="1-GettingStarted.html">
+            
+                    
+                    1.0: GettingStarted
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2-Sass-Setup.html">
+            
+                <a href="2-Sass-Setup.html">
+            
+                    
+                    2.0: Sass Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3-npm-packages.html">
+            
+                <a href="3-npm-packages.html">
+            
+                    
+                    3.0: npm packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="4-Project-Layout.html">
+            
+                <a href="4-Project-Layout.html">
+            
+                    
+                    4.0: Project Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../concepts/0.0-Concepts.html">
+            
+                <a href="../concepts/0.0-Concepts.html">
+            
+                    
+                    Part 2: Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../concepts/1_FunctionalComponents/1.0-Functional-Components.html">
+            
+                <a href="../concepts/1_FunctionalComponents/1.0-Functional-Components.html">
+            
+                    
+                    1.0: Functional Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../concepts/1_FunctionalComponents/1.1-Functional-Component-Calling.html">
+            
+                <a href="../concepts/1_FunctionalComponents/1.1-Functional-Component-Calling.html">
+            
+                    
+                    1.1: Calling Functional Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../concepts/1_FunctionalComponents/1.2-Functional-Component-SingleElementRule.html">
+            
+                <a href="../concepts/1_FunctionalComponents/1.2-Functional-Component-SingleElementRule.html">
+            
+                    
+                    1.2: Challenge Answer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../concepts/1_FunctionalComponents/1.3-Functional-Arrow-Functions.html">
+            
+                <a href="../concepts/1_FunctionalComponents/1.3-Functional-Arrow-Functions.html">
+            
+                    
+                    1.3: Arrow Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../concepts/1_FunctionalComponents/1.4-Functional-Component-Expanded.html">
+            
+                <a href="../concepts/1_FunctionalComponents/1.4-Functional-Component-Expanded.html">
+            
+                    
+                    1.4: Functional Components Expanded
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../concepts/1_FunctionalComponents/1.5-Functional-Component-Challenge.html">
+            
+                <a href="../concepts/1_FunctionalComponents/1.5-Functional-Component-Challenge.html">
+            
+                    
+                    1.5: Functional Component Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../concepts/1_FunctionalComponents/1.6-Functional-Component-Final-PossibleAnswer.html">
+            
+                <a href="../concepts/1_FunctionalComponents/1.6-Functional-Component-Final-PossibleAnswer.html">
+            
+                    
+                    1.6: Functional Component Final
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../concepts/2-JSX/2.0-jsx.html">
+            
+                <a href="../concepts/2-JSX/2.0-jsx.html">
+            
+                    
+                    2.0: JSX Rules
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../concepts/2-JSX/2.0-jsx.html">
+            
+                <a href="../concepts/2-JSX/2.0-jsx.html">
+            
+                    
+                    2.1: JSX Rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../concepts/2-JSX/2.2-jsx-babelio.html">
+            
+                <a href="../concepts/2-JSX/2.2-jsx-babelio.html">
+            
+                    
+                    2.2: Babelio.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../concepts/2-JSX/2.3_jsx_webpack.html">
+            
+                <a href="../concepts/2-JSX/2.3_jsx_webpack.html">
+            
+                    
+                    2.3: Webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../concepts/2-JSX/2.4_jsx_babel.html">
+            
+                <a href="../concepts/2-JSX/2.4_jsx_babel.html">
+            
+                    
+                    2.4: Babel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../concepts/2-JSX/2.5_jsx_compiler.html">
+            
+                <a href="../concepts/2-JSX/2.5_jsx_compiler.html">
+            
+                    
+                    2.5: Custom Compiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../concepts/2-JSX/2.6_jsx_demo_finished.html">
+            
+                <a href="../concepts/2-JSX/2.6_jsx_demo_finished.html">
+            
+                    
+                    2.6: Demo Final
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../concepts/3-ClassComponents/3.0-Class-Components.html">
+            
+                <a href="../concepts/3-ClassComponents/3.0-Class-Components.html">
+            
+                    
+                    3.0: Class Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../concepts/3-ClassComponents/3.1-ES6-Classes.html">
+            
+                <a href="../concepts/3-ClassComponents/3.1-ES6-Classes.html">
+            
+                    
+                    3.1: classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../concepts/3-ClassComponents/3.2-constructors.html">
+            
+                <a href="../concepts/3-ClassComponents/3.2-constructors.html">
+            
+                    
+                    3.2: constructors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../concepts/3-ClassComponents/3.3-extends.html">
+            
+                <a href="../concepts/3-ClassComponents/3.3-extends.html">
+            
+                    
+                    3.3: extends
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../concepts/3-ClassComponents/3.4-super.html">
+            
+                <a href="../concepts/3-ClassComponents/3.4-super.html">
+            
+                    
+                    3.4: super
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../concepts/3-ClassComponents/3.5-interpolation.html">
+            
+                <a href="../concepts/3-ClassComponents/3.5-interpolation.html">
+            
+                    
+                    3.5: interpolation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../concepts/3-ClassComponents/3.6-map.html">
+            
+                <a href="../concepts/3-ClassComponents/3.6-map.html">
+            
+                    
+                    3.6: map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../concepts/3-ClassComponents/3.7-ClassComponent_Simple.html">
+            
+                <a href="../concepts/3-ClassComponents/3.7-ClassComponent_Simple.html">
+            
+                    
+                    3.7: Class Components Simple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../concepts/3-ClassComponents/3.8-ClassComponent_Counter.html">
+            
+                <a href="../concepts/3-ClassComponents/3.8-ClassComponent_Counter.html">
+            
+                    
+                    3.8: Class Components Counter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../concepts/3-ClassComponents/3.9-ClassComponent_Challenge.html">
+            
+                <a href="../concepts/3-ClassComponents/3.9-ClassComponent_Challenge.html">
+            
+                    
+                    3.9: Class Components Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../concepts/4-props/4.0-props.html">
+            
+                <a href="../concepts/4-props/4.0-props.html">
+            
+                    
+                    4.0: Props Simple Demo
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../concepts/4-props/4.1-PropsDemo.md">
+            
+                <span>
+            
+                    
+                    4.1: Props Demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../concepts/4-props/4.3-props_mapping.md">
+            
+                <span>
+            
+                    
+                    4.3: Props Mapping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../concepts/4-props/4.6-Props_Business_Card.md">
+            
+                <span>
+            
+                    
+                    4.6: Props Business Card
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../concepts/5-state/5.0-State-Demo.html">
+            
+                <a href="../concepts/5-state/5.0-State-Demo.html">
+            
+                    
+                    5.0: State Demo
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../concepts/5-state/5.1_setState-demo.html">
+            
+                <a href="../concepts/5-state/5.1_setState-demo.html">
+            
+                    
+                    5.1: State Demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../concepts/6-Lifecycle/6.0-lifecycle-methods.html">
+            
+                <a href="../concepts/6-Lifecycle/6.0-lifecycle-methods.html">
+            
+                    
+                    6.0: Lifecycle Methods
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../concepts/6-Lifecycle/6.1-lifecycle-componentwillmount.html">
+            
+                <a href="../concepts/6-Lifecycle/6.1-lifecycle-componentwillmount.html">
+            
+                    
+                    6.1: Lifecycle Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Apps.md">
+            
+                <span>
+            
+                    
+                    Part 3: Apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../apps/1.0-timer-apps.html">
+            
+                <a href="../apps/1.0-timer-apps.html">
+            
+                    
+                    1.0 - Small Timer Apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../apps/1.1-simple-timer.html">
+            
+                <a href="../apps/1.1-simple-timer.html">
+            
+                    
+                    1.1 - Simple Timer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../apps/1.2-clock-app.html">
+            
+                <a href="../apps/1.2-clock-app.html">
+            
+                    
+                    1.2 - Clock App 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../apps/1.3-stop-watch-app.html">
+            
+                <a href="../apps/1.3-stop-watch-app.html">
+            
+                    
+                    1.3 - Stop Watch App 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../apps/1.4-timer-challenge.html">
+            
+                <a href="../apps/1.4-timer-challenge.html">
+            
+                    
+                    1.4 - Challenge 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../apps/2.0-concept-list-app.html">
+            
+                <a href="../apps/2.0-concept-list-app.html">
+            
+                    
+                    2.0 - Concept List 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../apps/2.1-concepts-data.html">
+            
+                <a href="../apps/2.1-concepts-data.html">
+            
+                    
+                    2.1 - Concept Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../apps/2.2-concept-list-app.html">
+            
+                <a href="../apps/2.2-concept-list-app.html">
+            
+                    
+                    2.2 - Concept App Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../apps/2.3-concept.html">
+            
+                <a href="../apps/2.3-concept.html">
+            
+                    
+                    2.3 - Concept Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../apps/2.3-concept.html">
+            
+                <a href="../apps/2.3-concept.html">
+            
+                    
+                    2.4 - Concept List Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../apps/3.0-friend-list-app.md">
+            
+                <span>
+            
+                    
+                    3.0 - The Friend List App 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../apps/3.1-friend-list-app.html">
+            
+                <a href="../apps/3.1-friend-list-app.html">
+            
+                    
+                    3.1 - Friend List App Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../apps/3.1-friend-list-app.html">
+            
+                <a href="../apps/3.1-friend-list-app.html">
+            
+                    
+                    3.2 - Friend List Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../apps/4.0-movie-search-apps.md">
+            
+                <span>
+            
+                    
+                    4.0 - Movie Search Application 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../apps/5.0-github-search-app.md">
+            
+                <span>
+            
+                    
+                    5.0 - Bitcoin Api Application 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../apps/6.0-bitcoin-chart-app.md">
+            
+                <span>
+            
+                    
+                    6.0 - Github Api Application
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="../apps/6.0-bitcoin-chart-app.md">
+            
+                <span>
+            
+                    
+                    6.1- Github Api Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../apps/7.0-youtube-api-app.md">
+            
+                <span>
+            
+                    
+                    7.0 - 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../apps/8.0-google-maps-api.md">
+            
+                <span>
+            
+                    
+                    8.0 - 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../apps/9.0-music-app.md">
+            
+                <span>
+            
+                    
+                    9.0 - 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../apps/10.0-VR-app.md">
+            
+                <span>
+            
+                    
+                    10.0 - 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Project.md">
+            
+                <span>
+            
+                    
+                    Part 4: Project
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../0.0-Project.md">
+            
+                <span>
+            
+                    
+                    1.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Notes.md">
+            
+                <span>
+            
+                    
+                    Notes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../1-.md">
+            
+                <span>
+            
+                    
+                    1.0 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../2-Troubleshooting.md">
+            
+                <span>
+            
+                    
+                    2.0 Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4.0: Project Layout</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>TODO: Proof and Build</p>
+<h1 id="project-layout">Project Layout</h1>
+<p>In this module, we&apos;ll set up a layout for our tutorial site/playground/sandbox. Here&apos;s what we&apos;ll be doing:</p>
+<ol>
+<li>Set up the basic routing for our site using React Router.</li>
+<li>Use a library called reactstrap for easy use of Bootstrap components in our project.</li>
+<li>We&apos;ll set up our initial components for structuring the app.</li>
+<li>We&apos;ll set up a small amount of styling for each of the site components.</li>
+</ol>
+<h2 id="react-router-dom">react-router-dom</h2>
+<p>For our routing for this app, we&apos;ll add react-router-dom. This is an extremely common tool to use in tandem with React projects. You should already have it installed.</p>
+<p>You&apos;ll be setting up React Router momentarily, but before that, go glance through the documentation for React Router <a href="https://reacttraining.com/react-router/web/guides/quick-start" target="_blank">here</a>. As a React Developer, this is a great site to know for project set up/navigation through your page. </p>
+<h2 id="reactstrap">reactstrap</h2>
+<p>React itself is a library, a single file that we use to make React components. There are thousands of other libraries and tools that we can use in conjunction with a React application. <a href="www.reactstrap.org">reactstrap</a> is a handy library for adding Bootstrap to our application. Go check it out.</p>
+<h3 id="bootstrap">bootstrap</h3>
+<p>Notice in your packages that we&apos;ve already installed Bootstrap. 
+We&apos;ll start to use it in a little while for a few things.</p>
+<h3 id="file-additions">File Additions</h3>
+<p>Let&apos;s add a few files and directories for the layout of our site. Please add the following to your components directory inside your site folder. With the exception of <code>_routes.js</code>, please make sure that your <code>.js</code> files are capitalized. These will be React components, and we are going to follow the convention of keeping component names capitalized:</p>
+<pre><code>    &#x2514;&#x2500;&#x2500; src
+        &#x2514;&#x2500;&#x2500; assets
+        &#x2514;&#x2500;&#x2500; components
+                &#x2514;&#x2500;&#x2500; site
+                    &#x2514;&#x2500;&#x2500; _routes.js
+                    &#x2514;&#x2500;&#x2500; Footer.js
+                    &#x2514;&#x2500;&#x2500; Header.js
+                    &#x2514;&#x2500;&#x2500; Home.js
+                    &#x2514;&#x2500;&#x2500; Resources.js
+                    &#x2514;&#x2500;&#x2500; Sidebar.js
+        &#x2514;&#x2500;&#x2500; constants
+        &#x2514;&#x2500;&#x2500; styles
+              &#x2514;&#x2500;&#x2500; _body.scss
+              &#x2514;&#x2500;&#x2500; _footer.scss
+              &#x2514;&#x2500;&#x2500; _header.scss
+              &#x2514;&#x2500;&#x2500; _main.scss
+              &#x2514;&#x2500;&#x2500; _sidebar.scss
+              &#x2514;&#x2500;&#x2500; _variables.scss
+</code></pre><h3 id="reactjs-components">React.js components</h3>
+<p>We&apos;re going to add some simple components for the layout of the project. We haven&apos;t discussed components yet, so please go along with us and go ahead ahead and copy and paste the code for the next few steps. Soon enough, you will write your own components: </p>
+<p>Add the following to <code>Header.js</code>:</p>
+<pre><code class="lang-js">    <span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+    <span class="hljs-keyword">import</span> {
+      Navbar,
+      NavbarBrand,
+      Nav,
+      NavItem,
+      NavLink,
+    } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;reactstrap&apos;</span>;
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Header</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+      render() {
+        <span class="hljs-keyword">return</span> (
+          <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Navbar</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;header&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">NavbarBrand</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>React Library<span class="hljs-tag">&lt;/<span class="hljs-name">NavbarBrand</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Nav</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;ml-auto&quot;</span> <span class="hljs-attr">navbar</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">NavItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">NavLink</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/yourhandle/yourrepoforthisapp&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">NavLink</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">NavItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Nav</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Navbar</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></span>
+        );
+      }
+    }
+
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Header;
+</code></pre>
+<p>Add the following code to <code>Footer.js</code>:</p>
+<pre><code class="lang-js">    <span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+    <span class="hljs-keyword">import</span> {
+        Row
+      } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;reactstrap&apos;</span>;
+
+      <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Footer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+      render() {
+        <span class="hljs-keyword">return</span> (
+          <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Row</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&amp;copy; Eleven Fifty 2018<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span></span>
+        )
+      }
+    }
+
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Footer;
+</code></pre>
+<p>Add the following to <code>Sidebar.js</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-keyword">import</span> {
+  Route,
+  Link
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>
+
+<span class="hljs-keyword">import</span> { routes } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./_routes&apos;</span>;
+
+<span class="hljs-keyword">const</span> Sidebar = () =&gt; (
+
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;sidebar&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;sidebar-list-styling&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;sidebar-list list-unstyled&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/rationale&quot;</span>&gt;</span>Rationale<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/functionalcomponent&quot;</span>&gt;</span>Functional Component<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;sidebar-route&quot;</span>&gt;</span>
+      {routes.map((route, index) =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span>
+          <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span>
+          <span class="hljs-attr">path</span>=<span class="hljs-string">{route.path}</span>
+          <span class="hljs-attr">exact</span>=<span class="hljs-string">{route.exact}</span>
+          <span class="hljs-attr">component</span>=<span class="hljs-string">{route.main}</span>
+        /&gt;</span>
+      ))}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+)
+
+export default Sidebar;
+</span></code></pre>
+<p>Add the following to <code>Home.js</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> logo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../../logo.svg&apos;</span>;
+<span class="hljs-keyword">import</span> {
+    Link
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Home</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            &lt;div className=&quot;main&quot;&gt;
+                &lt;div className=&quot;mainDiv&quot;&gt;
+
+                    &lt;img src={logo} className=&quot;App-logo&quot; alt=&quot;logo&quot; /&gt;
+                    &lt;h1&gt;Welcome to React Fundamentals at Eleven Fifty&lt;/h1&gt;
+
+                    &lt;p&gt;This app is intended to be a starter/tutorial app for your upcoming project and a learning sandbox
+                        for you in months and years to come should you continue to develop software with React.
+                        In this application we will work through some of the basic React concepts, build out some small applications,
+                         and then unleash you to build your own applications.&lt;/p&gt;
+                    &lt;hr /&gt;
+                    &lt;h1&gt;Important Notes&lt;/h1&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;The source code can be found here: &lt;a href=&quot;https://github.com/ElevenfiftyAcademy/JavaScript-301-ReactFundamentals-Code&quot; target=&quot;blank&quot;&gt;&lt;span&gt;here&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;Being component based, you can move on to the next module.&lt;/li&gt;
+                        &lt;li&gt;The styling is intentionally bland in some spots. Just a sandbox.&lt;/li&gt;
+                        &lt;li&gt;At this phase, this site is not yet responsive.&lt;/li&gt;
+                        &lt;li&gt;Refactor the text on this page and make this your own portfolio project.&lt;/li&gt;
+                        &lt;li&gt;This app simply scratches the surface on what is possible with React.&lt;/li&gt;
+                        &lt;li&gt;We have tried to collect the very best resources for this app, and we have cited those &lt;Link to=&quot;/resources&quot;&gt;here&lt;/Link&gt;.&lt;/li&gt;
+                        &lt;li&gt;The set up for this app might be the most confusing part. Hang in there..&lt;/li&gt;
+                        &lt;li&gt;&lt;Link to=&quot;/resources&quot;&gt;React Resources&lt;/Link&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+</code></pre>
+<p>Add the following to <code>Resources.js</code>. We&apos;ll use this file to add for our works cited and for cool resources for you:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Resources</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;main&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;mainDiv&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>React Resources<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Below are some of the resources that we used throughout this app.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>The Official Docs<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>React Router Dom<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Stephen Grider&apos;s Udemy Course for the Udemy API. He&apos;s all over the place.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Samer Buna&apos;s Pluralsight Course for the Github API Starter<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>reactstrap for a Bootstrap app<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>The Moviee App<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Font Awesome for React: https://gorangajic.github.io/react-icons/fa.html<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Bitcoin: https://github.com/bmorelli25/interactive-bitcoin-price-chart<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Google Maps: https://github.com/mthorry/earthquakes-mapper<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Google Maps: https://github.com/mthorry/earthquakes-mapper<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>https://ssetem.gitbooks.io/searchkit/docs/setup/project-setup.html<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>http://neptunian.github.io/react-photo-gallery/examples/basic.html<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>https://github.com/ngokevin/aframe-react-boilerplate<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>More Reading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We didn&apos;t really use these, but here are a few extra resources to help:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Extra<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>The Moviee App<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        );
+    }
+}
+</code></pre>
+<p>Add the following to <code>_routes.js</code></p>
+<pre><code class="lang-js">    <span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+    <span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Home&apos;</span>;
+    <span class="hljs-keyword">import</span> Resources <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Resources&apos;</span>;
+
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> routes = [
+        {
+          path: <span class="hljs-string">&apos;/&apos;</span> || <span class="hljs-string">&apos;/home&apos;</span>,
+          exact: <span class="hljs-literal">true</span>,
+          main: () =&gt; &lt;Home /&gt;
+        },
+        {
+          path: &apos;/resources&apos;,
+          exact: true,
+          main: () =&gt; &lt;Resources /&gt;
+      },
+    ]
+</code></pre>
+<h3 id="scss-starter-code-for-components">SCSS starter code for components</h3>
+<p>Next, we&apos;ll add some starter styling for each of our components. We are intentionally going light on the stylingPlease feel free to alter this to your own liking and add to it:</p>
+<p>Add the following code to <code>_header.scss</code>:</p>
+<pre><code class="lang-scss"><span class="hljs-comment">/****************************
+Header Section
+****************************/</span>
+<span class="hljs-selector-class">.header</span> {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0.5em</span><span class="hljs-meta">!important</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$gray</span>; 
+    <span class="hljs-attribute">color</span>: white;
+}
+
+<span class="hljs-selector-class">.header</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">color</span>: white;
+}
+
+<span class="hljs-selector-class">.header</span>  <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0.8em</span><span class="hljs-meta">!important</span>;
+}
+</code></pre>
+<p>Add the following code to <code>_footer.scss</code>:</p>
+<pre><code class="lang-scss"><span class="hljs-comment">/****************************
+    Footer Section
+****************************/</span>
+<span class="hljs-selector-tag">footer</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$gray</span>; 
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-tag">footer</span>  <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0.8em</span><span class="hljs-meta">!important</span>;
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">1.5em</span>;
+}
+</code></pre>
+<p>Add the following code to <code>_sidebar.scss</code>:</p>
+<pre><code class="lang-scss"><span class="hljs-comment">/****************************
+Sidebar Section
+****************************/</span>
+<span class="hljs-selector-class">.sidebar</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$gray</span>; 
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-tag">ul</span> {
+    <span class="hljs-attribute">list-style-type</span>: <span class="hljs-string">&apos;none&apos;</span>;
+}
+
+<span class="hljs-selector-class">.sidebar-list-styling</span>{
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">20%</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$gray</span>;
+    <span class="hljs-attribute">color</span>: white;
+}
+
+<span class="hljs-selector-class">.sidebar-list</span> <span class="hljs-selector-tag">a</span>{
+    <span class="hljs-attribute">color</span>: white;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.sidebar-route</span>{ 
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-string">&apos;00px&apos;</span>; 
+}
+</code></pre>
+<p>Add the following code to <code>_main.scss</code>:</p>
+<pre><code class="lang-scss"><span class="hljs-comment">/****************************
+Main Section
+****************************/</span>
+<span class="hljs-selector-class">.main</span> {
+  <span class="hljs-attribute">background-color</span>: white;
+  <span class="hljs-attribute">color</span>: black;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-selector-class">.mainDiv</span> {
+  <span class="hljs-attribute">margin</span>: auto;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">90%</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
+}
+
+<span class="hljs-selector-class">.App-logo</span> {
+  <span class="hljs-attribute">animation</span>: App-logo-spin infinite <span class="hljs-number">20s</span> linear;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">80px</span>;
+}
+
+@keyframes App-logo-spin {
+  from { <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">0deg</span>); }
+  to { <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">360deg</span>); }
+}
+</code></pre>
+<h3 id="scss-imports">SCSS Imports</h3>
+<p>Update App.scss to show the following imports. Note that you should already have the first two:</p>
+<pre><code class="lang-js">@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;styles/variables.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;styles/body.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;styles/header.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;styles/sidebar.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;styles/main.scss&quot;</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;styles/footer.scss&quot;</span>;
+</code></pre>
+<h3 id="appjs">App.js</h3>
+<p>Finally, delete the code from <code>App.js</code> and replace it with the following code:</p>
+<pre><code class="lang-js">  <span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+  <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;bootstrap/dist/css/bootstrap.css&apos;</span>;
+  <span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./App.css&apos;</span>;
+  <span class="hljs-keyword">import</span> Header <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/site/Header&apos;</span>
+  <span class="hljs-keyword">import</span> Footer <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/site/Footer&apos;</span>
+  <span class="hljs-keyword">import</span> Sidebar <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/site/Sidebar&apos;</span>
+  <span class="hljs-keyword">import</span> {
+    BrowserRouter <span class="hljs-keyword">as</span> Router,
+  } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
+
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+      <span class="hljs-keyword">return</span> (
+        &lt;div&gt;
+          &lt;Header /&gt;
+            &lt;Router&gt;
+              &lt;Sidebar /&gt;
+            &lt;/Router&gt;
+          &lt;Footer /&gt;
+        &lt;/div&gt;
+      );
+    }
+  }
+
+  export default App;
+</code></pre>
+<h3 id="indexjs">index.js</h3>
+<p><code>index.js</code> should look like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./App&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;bootstrap/dist/css/bootstrap.css&apos;</span>;
+
+<span class="hljs-keyword">import</span> registerServiceWorker <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./registerServiceWorker&apos;</span>;
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>, document.getElementById(&apos;root&apos;));
+registerServiceWorker();
+</span></code></pre>
+<h3 id="run-the-app">Run the app</h3>
+<p>At this point, you should be able to run <code>npm start</code> and get something similar to the following:
+<img src="../assets/1-4-0-layout.PNG" alt="starter-app"></p>
+<h3 id="module-2">Module #2</h3>
+<p>Let&apos;s start learning about what a lot of this stuff is doing by learning about the fundamentals of React.</p>
+<ul>
+<li><a href="../concepts/0.0-Concepts.html">Part 2: React Fundamentals</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3-npm-packages.html" class="navigation navigation-prev " aria-label="Previous page: 3.0: npm packages">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../concepts/0.0-Concepts.html" class="navigation navigation-next " aria-label="Next page: Part 2: Concepts">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.0: Project Layout","level":"1.2.4","depth":2,"next":{"title":"Part 2: Concepts","level":"1.3","depth":1,"path":"concepts/0.0-Concepts.md","ref":"concepts/0.0-Concepts.md","articles":[{"title":"1.0: Functional Components","level":"1.3.1","depth":2,"path":"concepts/1_FunctionalComponents/1.0-Functional-Components.md","ref":"concepts/1_FunctionalComponents/1.0-Functional-Components.md","articles":[{"title":"1.1: Calling Functional Components","level":"1.3.1.1","depth":3,"path":"concepts/1_FunctionalComponents/1.1-Functional-Component-Calling.md","ref":"concepts/1_FunctionalComponents/1.1-Functional-Component-Calling.md","articles":[]},{"title":"1.2: Challenge Answer","level":"1.3.1.2","depth":3,"path":"concepts/1_FunctionalComponents/1.2-Functional-Component-SingleElementRule.md","ref":"concepts/1_FunctionalComponents/1.2-Functional-Component-SingleElementRule.md","articles":[]},{"title":"1.3: Arrow Functions","level":"1.3.1.3","depth":3,"path":"concepts/1_FunctionalComponents/1.3-Functional-Arrow-Functions.md","ref":"concepts/1_FunctionalComponents/1.3-Functional-Arrow-Functions.md","articles":[]},{"title":"1.4: Functional Components Expanded","level":"1.3.1.4","depth":3,"path":"concepts/1_FunctionalComponents/1.4-Functional-Component-Expanded.md","ref":"concepts/1_FunctionalComponents/1.4-Functional-Component-Expanded.md","articles":[]},{"title":"1.5: Functional Component Challenge","level":"1.3.1.5","depth":3,"path":"concepts/1_FunctionalComponents/1.5-Functional-Component-Challenge.md","ref":"concepts/1_FunctionalComponents/1.5-Functional-Component-Challenge.md","articles":[]},{"title":"1.6: Functional Component Final","level":"1.3.1.6","depth":3,"path":"concepts/1_FunctionalComponents/1.6-Functional-Component-Final-PossibleAnswer.md","ref":"concepts/1_FunctionalComponents/1.6-Functional-Component-Final-PossibleAnswer.md","articles":[]}]},{"title":"2.0: JSX Rules","level":"1.3.2","depth":2,"path":"concepts/2-JSX/2.0-jsx.md","ref":"concepts/2-JSX/2.0-jsx.md","articles":[{"title":"2.1: JSX Rules","level":"1.3.2.1","depth":3,"path":"concepts/2-JSX/2.0-jsx.md","ref":"concepts/2-JSX/2.0-jsx.md","articles":[]},{"title":"2.2: Babelio.js","level":"1.3.2.2","depth":3,"path":"concepts/2-JSX/2.2-jsx-babelio.md","ref":"concepts/2-JSX/2.2-jsx-babelio.md","articles":[]},{"title":"2.3: Webpack","level":"1.3.2.3","depth":3,"path":"concepts/2-JSX/2.3_jsx_webpack.md","ref":"concepts/2-JSX/2.3_jsx_webpack.md","articles":[]},{"title":"2.4: Babel","level":"1.3.2.4","depth":3,"path":"concepts/2-JSX/2.4_jsx_babel.md","ref":"concepts/2-JSX/2.4_jsx_babel.md","articles":[]},{"title":"2.5: Custom Compiler","level":"1.3.2.5","depth":3,"path":"concepts/2-JSX/2.5_jsx_compiler.md","ref":"concepts/2-JSX/2.5_jsx_compiler.md","articles":[]},{"title":"2.6: Demo Final","level":"1.3.2.6","depth":3,"path":"concepts/2-JSX/2.6_jsx_demo_finished.md","ref":"concepts/2-JSX/2.6_jsx_demo_finished.md","articles":[]}]},{"title":"3.0: Class Components","level":"1.3.3","depth":2,"path":"concepts/3-ClassComponents/3.0-Class-Components.md","ref":"concepts/3-ClassComponents/3.0-Class-Components.md","articles":[{"title":"3.1: classes","level":"1.3.3.1","depth":3,"path":"concepts/3-ClassComponents/3.1-ES6-Classes.md","ref":"concepts/3-ClassComponents/3.1-ES6-Classes.md","articles":[]},{"title":"3.2: constructors","level":"1.3.3.2","depth":3,"path":"concepts/3-ClassComponents/3.2-constructors.md","ref":"concepts/3-ClassComponents/3.2-constructors.md","articles":[]},{"title":"3.3: extends","level":"1.3.3.3","depth":3,"path":"concepts/3-ClassComponents/3.3-extends.md","ref":"concepts/3-ClassComponents/3.3-extends.md","articles":[]},{"title":"3.4: super","level":"1.3.3.4","depth":3,"path":"concepts/3-ClassComponents/3.4-super.md","ref":"concepts/3-ClassComponents/3.4-super.md","articles":[]},{"title":"3.5: interpolation","level":"1.3.3.5","depth":3,"path":"concepts/3-ClassComponents/3.5-interpolation.md","ref":"concepts/3-ClassComponents/3.5-interpolation.md","articles":[]},{"title":"3.6: map","level":"1.3.3.6","depth":3,"path":"concepts/3-ClassComponents/3.6-map.md","ref":"concepts/3-ClassComponents/3.6-map.md","articles":[]},{"title":"3.7: Class Components Simple","level":"1.3.3.7","depth":3,"path":"concepts/3-ClassComponents/3.7-ClassComponent_Simple.md","ref":"concepts/3-ClassComponents/3.7-ClassComponent_Simple.md","articles":[]},{"title":"3.8: Class Components Counter","level":"1.3.3.8","depth":3,"path":"concepts/3-ClassComponents/3.8-ClassComponent_Counter.md","ref":"concepts/3-ClassComponents/3.8-ClassComponent_Counter.md","articles":[]},{"title":"3.9: Class Components Challenge","level":"1.3.3.9","depth":3,"path":"concepts/3-ClassComponents/3.9-ClassComponent_Challenge.md","ref":"concepts/3-ClassComponents/3.9-ClassComponent_Challenge.md","articles":[]}]},{"title":"4.0: Props Simple Demo","level":"1.3.4","depth":2,"path":"concepts/4-props/4.0-props.md","ref":"concepts/4-props/4.0-props.md","articles":[{"title":"4.1: Props Demo","level":"1.3.4.1","depth":3,"path":"concepts/4-props/4.1-PropsDemo.md","ref":"concepts/4-props/4.1-PropsDemo.md","articles":[]},{"title":"4.3: Props Mapping","level":"1.3.4.2","depth":3,"path":"concepts/4-props/4.3-props_mapping.md","ref":"concepts/4-props/4.3-props_mapping.md","articles":[]},{"title":"4.6: Props Business Card","level":"1.3.4.3","depth":3,"path":"concepts/4-props/4.6-Props_Business_Card.md","ref":"concepts/4-props/4.6-Props_Business_Card.md","articles":[]}]},{"title":"5.0: State Demo","level":"1.3.5","depth":2,"path":"concepts/5-state/5.0-State-Demo.md","ref":"concepts/5-state/5.0-State-Demo.md","articles":[{"title":"5.1: State Demo","level":"1.3.5.1","depth":3,"path":"concepts/5-state/5.1_setState-demo.md","ref":"concepts/5-state/5.1_setState-demo.md","articles":[]}]},{"title":"6.0: Lifecycle Methods","level":"1.3.6","depth":2,"path":"concepts/6-Lifecycle/6.0-lifecycle-methods.md","ref":"concepts/6-Lifecycle/6.0-lifecycle-methods.md","articles":[{"title":"6.1: Lifecycle Methods","level":"1.3.6.1","depth":3,"path":"concepts/6-Lifecycle/6.1-lifecycle-componentwillmount.md","ref":"concepts/6-Lifecycle/6.1-lifecycle-componentwillmount.md","articles":[]}]}]},"previous":{"title":"3.0: npm packages","level":"1.2.3","depth":2,"path":"site/3-npm-packages.md","ref":"site/3-npm-packages.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"site/4-Project-Layout.md","mtime":"2018-02-04T04:50:49.450Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-05T03:16:42.685Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
