@@ -46,7 +46,7 @@
     * [6.0: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods.md)
        * [6.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-componentwillmount.md)
 
-* [Part 3: Apps](Apps.md)
+* [Part 3: Apps](apps/0.0-apps.md)
     * [1.0 - Small Timer Apps](apps/1.0-timer-apps.md)
         * [1.1 - Simple Timer](apps/1.1-simple-timer.md)
         * [1.2 - Clock App ](apps/1.2-clock-app.md)
