@@ -1082,19 +1082,193 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <pre><code class="lang-js">
+                                <h3 id="clockwatch-app">Clockwatch App</h3>
+<p>This next time app we&apos;re going to make is going to be a stopwatch!</p>
+<p>To start we need to create a StopWatchApp.js file inside of our timer-apps folder, your timer-apps should look like the following.</p>
+<pre><code>    &#x2514;&#x2500;&#x2500; src
+        &#x2514;&#x2500;&#x2500; assets
+        &#x2514;&#x2500;&#x2500; components
+                &#x2514;&#x2500;&#x2500; apps
+                    &#x2514;&#x2500;&#x2500; timer-apps
+                        &#x2514;&#x2500;&#x2500; TimePiecesApp.js
+                        &#x2514;&#x2500;&#x2500; TimerApp.js 
+                        &#x2514;&#x2500;&#x2500; ClockApp.js  
+                        &#x2514;&#x2500;&#x2500; StopWatchApp.js
+</code></pre><p>Let&apos;s go ahead and get our StopWatchApp file started with the following code:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 
-<span class="hljs-comment">// https://jsfiddle.net/vakhtang/j276r2zh/</span>
-<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stopwatch</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;section-title&quot;</span>&gt;</span>React Stopwatch!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+</code></pre>
+<p>Next, to get this to display, we need to change our parent component,  TimePiecesApp to no longer have StopWatchApp commented out, so go ahead and make sure that your TimePiecesApp file looks like this.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> TimerApp <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./TimerApp&apos;</span>;
+<span class="hljs-keyword">import</span> ClockApp <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./ClockApp&apos;</span>;
+<span class="hljs-keyword">import</span> StopWatchApp <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./StopWatchApp&apos;</span>;
 
 
-<span class="hljs-keyword">const</span> leftPad = (width, n) =&gt; {
-    <span class="hljs-keyword">if</span> ((n + <span class="hljs-string">&apos;&apos;</span>).length &gt; width) {
-        <span class="hljs-keyword">return</span> n;
+<span class="hljs-keyword">const</span> TimePiecesApp = () =&gt; {
+    <span class="hljs-keyword">return</span> (
+        &lt;div className=&quot;main&quot;&gt;
+            &lt;div className=&quot;mainDiv&quot;&gt;
+                &lt;TimerApp /&gt;
+                &lt;hr /&gt;
+                &lt;ClockApp /&gt;
+                 &lt;hr /&gt;
+                &lt;StopWatchApp /&gt; 
+            &lt;/div&gt;
+        &lt;/div&gt;
+    )
+}
+
+export default TimePiecesApp;
+</code></pre>
+<p>Now, you should see your Stopwatch App h1, and we&apos;re ready to start developing the stopwatch. </p>
+<p>To start thinking about our stop watch app, we&apos;re going to want to consider what pieces of data we&apos;ll need to display for our stopwatch to work, and what kind of data we want in our state. When starting a react application, taking time to think through and carefully design the state will save you time and headache later.</p>
+<p>We need a few capabilities for a stop watch, one the ability to keep track of time starting at a specified moment, two, different lap times need to be able to be recorded, and three we need to know whether or not the stopwatch is currently running. Our state needs to include these things so that we can easily display them to the screen.</p>
+<p>Go ahead and start a constructor for this component, keeping in mind the state that we need. We&apos;re also going to bind our methods to this in the constructor. Type out the following code in your constructor.</p>
+<pre><code class="lang-js">    <span class="hljs-keyword">constructor</span>(props) {
+        <span class="hljs-keyword">super</span>(props);
+
+        [<span class="hljs-string">&quot;lap&quot;</span>, <span class="hljs-string">&quot;update&quot;</span>, <span class="hljs-string">&quot;reset&quot;</span>, <span class="hljs-string">&quot;toggle&quot;</span>].forEach((method) =&gt; {
+            <span class="hljs-keyword">this</span>[method] = <span class="hljs-keyword">this</span>[method].bind(<span class="hljs-keyword">this</span>);
+        });
+
+        <span class="hljs-keyword">this</span>.state = <span class="hljs-keyword">this</span>.initialState = {
+            isRunning: <span class="hljs-literal">false</span>,
+            lapTimes: [],
+            timeElapsed: <span class="hljs-number">0</span>,
+        };
     }
-    <span class="hljs-keyword">const</span> padding = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(width).join(<span class="hljs-string">&apos;0&apos;</span>);
-    <span class="hljs-keyword">return</span> (padding + n).slice(-width);
-};
+</code></pre>
+<p>Notice here that we also are binding the methods to this, the reason we do is that by doing it this way, your event handler has its context bound to the component instance. You can access props and state and call setState or forceUpdate from such bound handler. So in order to access setState from event handlers, they need to be bound to the this. So we can either bind the methods that need access to setState, or we can make them as arrow functions, since arrow functions do not bind their this, and therefore in them, you will still have access to setState. In this instance, we&apos;ll go ahead and bind them in the constructor. At the end of the module, there will be code using the ES6 way of just using arrow functions.</p>
+<p>Next, we need a way to display our state, so we can add some things to our render() function. Since, we have multiple parts of our state object, and writing this.state.isRunning, this.state.lapTimes, multiple times, we can just declare constants to make it easier to access our state in our render. In the first line of the render, we do this, as seen below. Go ahead and write the following in your render function, then we&apos;ll go through it.</p>
+<pre><code class="lang-js">render() {
+        <span class="hljs-keyword">const</span> { isRunning, lapTimes, timeElapsed } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">return</span> (
+            &lt;div&gt;
+                &lt;h1&gt;React Stopwatch&lt;/h1&gt;
+                &lt;TimeElapsed id=&quot;timer&quot; timeElapsed={timeElapsed} /&gt;
+                &lt;button onClick={this.toggle}&gt;
+                    {isRunning ? &apos;Stop&apos; : &apos;Start&apos;}
+                &lt;/button&gt;
+                &lt;button
+                    onClick={isRunning ? this.lap : this.reset}
+                    disabled={!isRunning &amp;&amp; !timeElapsed}
+                &gt;
+                    {isRunning || !timeElapsed ? &apos;Lap&apos; : &apos;Reset&apos;}
+                &lt;/button&gt;
+                {lapTimes.length &gt; 0 &amp;&amp; &lt;LapTimes lapTimes={lapTimes} /&gt;}
+            &lt;/div&gt;
+        );
+    }
+</code></pre>
+<p>So, in our return, we first have our header, and then we have a TimeElapsed component that we have not yet defined. When we see a capitalized component like this, it means it is a react component, one that we have yet to create. We can kind of tell what it&apos;s doing though, it has an id of &quot;timer&quot;, and it takes in the timeElapsed. We can probably guess that it&apos;s going to display the timeElapsed, since that&apos;s all it is taking as a prop.</p>
+<p>Next, we have a button that has an on click event called &quot;toggle&quot;, it then display &quot;Stop&quot; or &quot;Start&quot; based on whether or not isRunning is true. This appears to be how we can stop and start our timer.</p>
+<p>The next button has an onClick event of either lap or reset, depending on if isRunning is true, and again the text &quot;Lap&quot; or &quot;Reset&quot;. This button will be able to do a couple of different things depending on if isRunning is true.</p>
+<p>Last of all, we have a LapTimes component that takes in lapTimes, and presumably, displays them. Again, this is another component we have yet to define, and one that we&apos;ll need to. </p>
+<p>Note the frequent use of ternary operators, for conditional rendering of things.</p>
+<p>Next, let&apos;s go ahead and create the other react components that we&apos;re using to render certain props. Since we don&apos;t need to access state in either of state, and they&apos;re primarily used to render data, we can make these functional components using arrow functions. </p>
+<p>Let&apos;s start with the LapTimes component. We want this laptime component to display the lap times, as we press lap and add to them. We&apos;re passing lapTimes to this component as a prop, so it needs to take that and format it in a way to display nicely. Let&apos;s start by starting off our LapTimes component and using map, map our array of lapTimes into a tr with tds containing the information we want to display. Then to display this, after we&apos;ve created a variable with the results of our map, we can just simply display that in our return. Go ahead and type out the code for LapTimes outside of the code for your StopWatchApp component.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> LapTimes = (props) =&gt; {
+        <span class="hljs-keyword">const</span> rows = props.lapTimes.map((lapTime, index) =&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{++index}</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{index}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">TimeElapsed</span> <span class="hljs-attr">timeElapsed</span>=<span class="hljs-string">{lapTime}</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        );
+        return (
+            <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lap-times&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Lap<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Time<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>{rows}<span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+        );
+}
+</span></code></pre>
+<p>So now, our react app should know what LapTimes is, and should be able to find it. It still doesn&apos;t know what TimeElapsed is, so let&apos;s go ahead and create that component. </p>
+<p>For TimeElapsed, we are passing it timeElapsed as a prop, and want it to be able to display the time elapsed! First thing we need to do with our timeElapsed, is make sure it&apos;s in seconds so that we can convert it, and display it how we want it to be displayed. Then we&apos;ll need to figure out minutes from there to display. We can create a function for this called <code>getUnits</code>. </p>
+<p>Next we&apos;ll need to zero pad our timer, with 0s as needed to make it look like a normal stopwatch. If we don&apos;t do this, we will only start with a single zero for seconds and minutes, which is not how time works. We can create a function called <code>leftPad</code> to do this. Lastly, we need to display our time elapsed, in our render function, we can do this implementing the other functions we created. Type the code below, underneath LapTimes.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> TimeElapsed = (props) =&gt; {
+    <span class="hljs-keyword">const</span> getUnits = () =&gt; {
+        <span class="hljs-keyword">const</span> seconds = props.timeElapsed / <span class="hljs-number">1000</span>;
+        <span class="hljs-keyword">return</span> {
+            min: <span class="hljs-built_in">Math</span>.floor(seconds / <span class="hljs-number">60</span>).toString(),
+            sec: <span class="hljs-built_in">Math</span>.floor(seconds % <span class="hljs-number">60</span>).toString(),
+            msec: (seconds % <span class="hljs-number">1</span>).toFixed(<span class="hljs-number">3</span>).substring(<span class="hljs-number">2</span>)
+        };
+    }
+        <span class="hljs-keyword">const</span> leftPad = (width, n) =&gt; {
+            <span class="hljs-keyword">if</span> ((n + <span class="hljs-string">&apos;&apos;</span>).length &gt; width) {
+                <span class="hljs-keyword">return</span> n;
+            }
+            <span class="hljs-keyword">const</span> padding = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(width).join(<span class="hljs-string">&apos;0&apos;</span>);
+            <span class="hljs-keyword">return</span> (padding + n).slice(-width);
+        };
+        <span class="hljs-keyword">const</span> units = getUnits();
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">{props.id}</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{leftPad(2, units.min)}:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{leftPad(2, units.sec)}.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{units.msec}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        );
+}
+</code></pre>
+<p>Make sure you read through and understand the above code before moving on. We&apos;ve created these two functional components to format and display our data how we need it. It&apos;s nice to separate concerns into different components so that your code is more easily readable and reusable.</p>
+<p>At this point, you should now no longer have any errors, but nothing should happen when you click the Start button, the stopwatch doesn&apos;t yet work. So all of our render portions are there, now we need to create the methods to make this thing actually work. If you look back to our constructor, you&apos;ll have hints as to what a couple of these methods are. Let&apos;s go through them one by one.</p>
+<p>First up we have our toggle method. We need this to basically toggle back and forth whether or not the stop watch is running or not. So when we call this it needs to change the <code>isRunning</code> part of our state. </p>
+<p>So the first part of toggle method needs to set isRunning to the opposite of what it is, like so:</p>
+<pre><code class="lang-js">    <span class="hljs-keyword">this</span>.setState({ isRunning: !<span class="hljs-keyword">this</span>.state.isRunning }, () =&gt; {
+        });
+</code></pre>
+<p>Then we need it to either, start the timer if isRunning is now true, or to stop the timer (clearInterval), if isRunning is now false. Type the following code below into your StopWatchApp below your constructor.</p>
+<pre><code class="lang-js">toggle() {
+        <span class="hljs-keyword">this</span>.setState({ isRunning: !<span class="hljs-keyword">this</span>.state.isRunning }, () =&gt; {
+            <span class="hljs-keyword">this</span>.state.isRunning ? <span class="hljs-keyword">this</span>.startTimer() : clearInterval(<span class="hljs-keyword">this</span>.timer)
+        });
+    }
+</code></pre>
+<p>Now that we have toggle, we actually need a <code>startTimer()</code> method for toggle to call to start the timer. This is going to look similar to the timers we have used before, but this time instead of updating every 1000ms, we want it to update more frequently since we&apos;re intersted in a smaller increment of time for a stopwatch. Type the following code below your <code>toggle()</code> method in your StopWatchApp.</p>
+<pre><code class="lang-js">    startTimer() {
+        <span class="hljs-keyword">this</span>.startTime = <span class="hljs-built_in">Date</span>.now();
+        <span class="hljs-keyword">this</span>.timer = setInterval(<span class="hljs-keyword">this</span>.update, <span class="hljs-number">10</span>);
+    }
+</code></pre>
+<p>We now need an update method, to use in our <code>startTimer()</code>. Timer will use this update method every 10ms, to update the displayed time. <code>update()</code> is going to use the initial startTime, and then set the new startTime, for future use. Every time it will set a new timeElapsed, based on the old time elapse, and the difference between the startTime and the current time. This component is essential to constantly update the timeElapsed.</p>
+<pre><code class="lang-js">    update() {
+        <span class="hljs-keyword">const</span> delta = <span class="hljs-built_in">Date</span>.now() - <span class="hljs-keyword">this</span>.startTime;
+        <span class="hljs-keyword">this</span>.setState({ timeElapsed: <span class="hljs-keyword">this</span>.state.timeElapsed + delta });
+        <span class="hljs-keyword">this</span>.startTime = <span class="hljs-built_in">Date</span>.now();
+    }
+</code></pre>
+<p>Next we need our <code>lap()</code> method. This method will be called when the lap button is pressed, and will add on a new time to the lapTimes every time it is called. If you remember our initial state, lapTime start as an empty array, so we&apos;ll need to add a new lap time to the array every time. Add the following code below your <code>update()</code> method.</p>
+<pre><code class="lang-js">    lap() {
+        <span class="hljs-keyword">const</span> { lapTimes, timeElapsed } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">this</span>.setState({ lapTimes: lapTimes.concat(timeElapsed) });
+    }
+</code></pre>
+<p>Lastly, we need a <code>reset()</code> method, to completely reset the stopwatch when the reset button is clicked. This method will clearInterval on our timer, like in our other timers, and set the state back to our initial empty state. Add the following code below your <code>lap()</code> method.</p>
+<pre><code class="lang-js">    reset() {
+        clearInterval(<span class="hljs-keyword">this</span>.timer);
+        <span class="hljs-keyword">this</span>.setState(<span class="hljs-keyword">this</span>.initialState);
+    }
+</code></pre>
+<p>Now you should have a working stop watch!!! </p>
+<p>Make sure you carefully look through the code, and understand how this app is working. This app is definitely more complex than the previous two, but uses all of the same concepts. If you don&apos;t understand how any part of this app works, ask a neighbor or an instructor. The following code is the original with the functions bound in the constructor. </p>
+<pre><code class="lang-js"><span class="hljs-comment">// https://jsfiddle.net/vakhtang/j276r2zh/</span>
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stopwatch</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     <span class="hljs-keyword">constructor</span>(props) {
@@ -1152,31 +1326,34 @@
         );
     }
 }
-
-class TimeElapsed extends React.Component {
-    getUnits() {
-        const seconds = this.props.timeElapsed / 1000;
+const TimeElapsed = (props) =&gt; {
+    const getUnits = () =&gt; {
+        const seconds = props.timeElapsed / 1000;
         return {
             min: Math.floor(seconds / 60).toString(),
             sec: Math.floor(seconds % 60).toString(),
             msec: (seconds % 1).toFixed(3).substring(2)
         };
     }
-    render() {
-        const units = this.getUnits();
+        const leftPad = (width, n) =&gt; {
+            if ((n + &apos;&apos;).length &gt; width) {
+                return n;
+            }
+            const padding = new Array(width).join(&apos;0&apos;);
+            return (padding + n).slice(-width);
+        };
+        const units = getUnits();
         return (
-            &lt;div id={this.props.id}&gt;
+            &lt;div id={props.id}&gt;
                 &lt;span&gt;{leftPad(2, units.min)}:&lt;/span&gt;
                 &lt;span&gt;{leftPad(2, units.sec)}.&lt;/span&gt;
                 &lt;span&gt;{units.msec}&lt;/span&gt;
             &lt;/div&gt;
         );
-    }
 }
 
-class LapTimes extends React.Component {
-    render() {
-        const rows = this.props.lapTimes.map((lapTime, index) =&gt;
+const LapTimes = (props) =&gt; {
+        const rows = props.lapTimes.map((lapTime, index) =&gt;
             &lt;tr key={++index}&gt;
                 &lt;td&gt;{index}&lt;/td&gt;
                 &lt;td&gt;&lt;TimeElapsed timeElapsed={lapTime} /&gt;&lt;/td&gt;
@@ -1185,15 +1362,119 @@ class LapTimes extends React.Component {
         return (
             &lt;table id=&quot;lap-times&quot;&gt;
                 &lt;thead&gt;
-                    &lt;th&gt;Lap&lt;/th&gt;
-                    &lt;th&gt;Time&lt;/th&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Lap&lt;/th&gt;
+                        &lt;th&gt;Time&lt;/th&gt;
+                    &lt;/tr&gt;
                 &lt;/thead&gt;
                 &lt;tbody&gt;{rows}&lt;/tbody&gt;
             &lt;/table&gt;
         );
-    }
 }
 </code></pre>
+<p>Now, as promised, this is the code refactored to use ES6 arrow functions, which do not bind this, and therefore do not need to be bound in the constructor.</p>
+<pre><code class="lang-js">
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stopwatch</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    <span class="hljs-keyword">constructor</span>(props) {
+        <span class="hljs-keyword">super</span>(props);
+        <span class="hljs-keyword">this</span>.state = <span class="hljs-keyword">this</span>.initialState = {
+            isRunning: <span class="hljs-literal">false</span>,
+            lapTimes: [],
+            timeElapsed: <span class="hljs-number">0</span>,
+        };
+    }
+    toggle = () =&gt; {
+        <span class="hljs-keyword">this</span>.setState({ isRunning: !<span class="hljs-keyword">this</span>.state.isRunning }, () =&gt; {
+            <span class="hljs-keyword">this</span>.state.isRunning ? <span class="hljs-keyword">this</span>.startTimer() : clearInterval(<span class="hljs-keyword">this</span>.timer)
+        });
+    }
+    lap = () =&gt; {
+        <span class="hljs-keyword">const</span> { lapTimes, timeElapsed } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">this</span>.setState({ lapTimes: lapTimes.concat(timeElapsed) });
+    }
+    reset = () =&gt; {
+        clearInterval(<span class="hljs-keyword">this</span>.timer);
+        <span class="hljs-keyword">this</span>.setState(<span class="hljs-keyword">this</span>.initialState);
+    }
+    startTimer () {
+        <span class="hljs-keyword">this</span>.startTime = <span class="hljs-built_in">Date</span>.now();
+        <span class="hljs-keyword">this</span>.timer = setInterval(<span class="hljs-keyword">this</span>.update, <span class="hljs-number">10</span>);
+    }
+    update = () =&gt; {
+        <span class="hljs-keyword">const</span> delta = <span class="hljs-built_in">Date</span>.now() - <span class="hljs-keyword">this</span>.startTime;
+        <span class="hljs-keyword">this</span>.setState({ timeElapsed: <span class="hljs-keyword">this</span>.state.timeElapsed + delta });
+        <span class="hljs-keyword">this</span>.startTime = <span class="hljs-built_in">Date</span>.now();
+    }
+    render() {
+        <span class="hljs-keyword">const</span> { isRunning, lapTimes, timeElapsed } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">return</span> (
+            &lt;div&gt;
+                &lt;h1&gt;React Stopwatch&lt;/h1&gt;
+                &lt;TimeElapsed id=&quot;timer&quot; timeElapsed={timeElapsed} /&gt;
+                &lt;button onClick={this.toggle}&gt;
+                    {isRunning ? &apos;Stop&apos; : &apos;Start&apos;}
+                &lt;/button&gt;
+                &lt;button
+                    onClick={isRunning ? this.lap : this.reset}
+                    disabled={!isRunning &amp;&amp; !timeElapsed}
+                &gt;
+                    {isRunning || !timeElapsed ? &apos;Lap&apos; : &apos;Reset&apos;}
+                &lt;/button&gt;
+                {lapTimes.length &gt; 0 &amp;&amp; &lt;LapTimes lapTimes={lapTimes} /&gt;}
+            &lt;/div&gt;
+        );
+    }
+}
+
+const TimeElapsed = (props) =&gt; {
+    const getUnits = () =&gt; {
+        const seconds = props.timeElapsed / 1000;
+        return {
+            min: Math.floor(seconds / 60).toString(),
+            sec: Math.floor(seconds % 60).toString(),
+            msec: (seconds % 1).toFixed(3).substring(2)
+        };
+    }
+        const leftPad = (width, n) =&gt; {
+            if ((n + &apos;&apos;).length &gt; width) {
+                return n;
+            }
+            const padding = new Array(width).join(&apos;0&apos;);
+            return (padding + n).slice(-width);
+        };
+        const units = getUnits();
+        return (
+            &lt;div id={props.id}&gt;
+                &lt;span&gt;{leftPad(2, units.min)}:&lt;/span&gt;
+                &lt;span&gt;{leftPad(2, units.sec)}.&lt;/span&gt;
+                &lt;span&gt;{units.msec}&lt;/span&gt;
+            &lt;/div&gt;
+        );
+}
+
+const LapTimes = (props) =&gt; {
+        const rows = props.lapTimes.map((lapTime, index) =&gt;
+            &lt;tr key={++index}&gt;
+                &lt;td&gt;{index}&lt;/td&gt;
+                &lt;td&gt;&lt;TimeElapsed timeElapsed={lapTime} /&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        );
+        return (
+            &lt;table id=&quot;lap-times&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Lap&lt;/th&gt;
+                        &lt;th&gt;Time&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;{rows}&lt;/tbody&gt;
+            &lt;/table&gt;
+        );
+}
+</code></pre>
+<p><a href="1.4-timer-challenge.html">Timer Challenge</a></p>
 
                                 
                                 </section>
@@ -1237,7 +1518,7 @@ class LapTimes extends React.Component {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.3 - Stop Watch App ","level":"1.4.1.3","depth":3,"next":{"title":"1.4 - Challenge ","level":"1.4.1.4","depth":3,"path":"apps/1.4-timer-challenge.md","ref":"apps/1.4-timer-challenge.md","articles":[]},"previous":{"title":"1.2 - Clock App ","level":"1.4.1.2","depth":3,"path":"apps/1.2-clock-app.md","ref":"apps/1.2-clock-app.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"apps/1.3-stop-watch-app.md","mtime":"2018-02-05T18:02:01.031Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-05T18:07:45.422Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.3 - Stop Watch App ","level":"1.4.1.3","depth":3,"next":{"title":"1.4 - Challenge ","level":"1.4.1.4","depth":3,"path":"apps/1.4-timer-challenge.md","ref":"apps/1.4-timer-challenge.md","articles":[]},"previous":{"title":"1.2 - Clock App ","level":"1.4.1.2","depth":3,"path":"apps/1.2-clock-app.md","ref":"apps/1.2-clock-app.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"apps/1.3-stop-watch-app.md","mtime":"2018-02-06T21:34:35.476Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-05T18:07:45.422Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

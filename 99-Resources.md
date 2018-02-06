@@ -20,6 +20,8 @@ This is a collection of demos of React.js. These demos are purposely written in 
 - [React Docs]() - Solid 
 - [React Router Tutorial](https://github.com/reactjs/react-router-tutorial)
 
+- [Modern JS Cheat Sheet](https://github.com/mbeaudru/modern-js-cheatsheet) - mbeaudru
+
 
 ## React 
 1.  Stop Watch https://jsfiddle.net/vakhtang/j276r2zh/
