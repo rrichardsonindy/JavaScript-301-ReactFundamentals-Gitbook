@@ -12,9 +12,10 @@
     * [1.1: Calling Functional Components](concepts/1_FunctionalComponents/1.1-Functional-Component-Calling.md)
     * [1.2: Single Element Rule](concepts/1_FunctionalComponents/1.2-Functional-Component-SingleElementRule.md)
     * [1.3: Arrow Functions](concepts/1_FunctionalComponents/1.3-Functional-Arrow-Functions.md)
-    * [1.4: Functional Components Expanded](concepts/1_FunctionalComponents/1.4-Functional-Component-Expanded.md)
-    * [1.5: Functional Component Challenge](concepts/1_FunctionalComponents/1.5-Functional-Component-Challenge.md)
-    * [1.6: Functional Component Final](concepts/1_FunctionalComponents/1.6-Functional-Component-Final-PossibleAnswer.md)
+    * [1.4: Functional Components Expanded](concepts/1_FunctionalComponents/1.4-Functional-Component-Challenge.md)
+    * [1.4: Functional Component Challenge](concepts/1_FunctionalComponents/1.4-Functional-Component-ChallengeAnswer.md)
+    * [1.5: Functional Components Expanded](concepts/1_FunctionalComponents/1.5-Functional-Component-Challenge2.md)
+    * [1.5: Functional Component Challenge](concepts/1_FunctionalComponents/1.5-Functional-Component-Challenge2Answer.md)
 
     * [2.0: JSX Rules](concepts/2-JSX/2.0-jsx.md)
     * [2.1: JSX Rules](concepts/2-JSX/2.0-jsx.md)
