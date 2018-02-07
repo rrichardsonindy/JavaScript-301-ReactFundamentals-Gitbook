@@ -612,7 +612,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../../Apps.md">
+        <li class="chapter " data-level="1.10" data-path="../../apps/0.0-apps.md">
             
                 <span>
             
@@ -1027,6 +1027,70 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="class-components">Class Components</h1>
+<p>Class Components have a little more complexity than Functional Components. Let&apos;s stay with our pattern and make a little list of notes here. </p>
+<pre><code>* must extend React.Component 
+
+* must always have a render method.
+
+* will often have a `constructor`.
+
+* Class components are considered the &quot;React way&quot; of writing components.
+
+* Known as intelligent components.
+
+* Built with ES6 JS Classes.
+
+* Have lifecycle hooks/methods, different phases in the lifecycle of the component where different events can/should happen. 
+
+* Use export, like Functional Components.
+
+* Multiple class components can be in one file, but only one class component should be exported for each file.
+</code></pre><p>These are a few rules that we&apos;ll study in the forthcoming modules. </p>
+<h1 id="es6-concepts">ES6 Concepts</h1>
+<p>If you don&apos;t already know, ES6 is a version of JavaScript. It is also known as ES2015. </p>
+<p>ES6 instroduced concepts and keywords in JavaScript that are ubiquitous in React. In these modules we&apos;re going to study some ES6 concepts before we see how they are applied in React. Here&apos;s what we&apos;ll be studying:</p>
+<ul>
+<li>Classes</li>
+<li>constructors</li>
+<li>extends</li>
+<li>super()</li>
+<li>string interpolation</li>
+<li>.map() (This was part of ES5)</li>
+</ul>
+<p>These concepts are seen throughout React, so we&apos;re going to just do some simple examples and see how they apply to React classes. </p>
+<h3 id="work-files">Work files</h3>
+<p>In the first few modules of this section, we&apos;ll write some plain JavaScript. If you have a JavaScript library, you can put these practice files in there. If you&apos;d like to add them to your React project, that&apos;s fine, too. You can just stow them away somewhere, possibly a separate directory. We&apos;re going to create a <code>javascript_practice</code> directory so that you can see these files in there. These files are playground files and won&apos;t be used in actual components, just so you know. Again, we&apos;re aiming to give you a scaffolded understanding of the JS concepts that would be found in a React project. Let&apos;s get started.</p>
+<pre><code>    &#x2514;&#x2500;&#x2500; src
+        &#x2514;&#x2500;&#x2500; assets
+        &#x2514;&#x2500;&#x2500; components
+        &#x2514;&#x2500;&#x2500; javascript_practice
+            &#x2514;&#x2500;&#x2500; 1_classes.js
+            &#x2514;&#x2500;&#x2500; 2_constructors.js
+            &#x2514;&#x2500;&#x2500; 3_extends.js
+            &#x2514;&#x2500;&#x2500; 4_super.js
+            &#x2514;&#x2500;&#x2500; 5_interpolation.js
+            &#x2514;&#x2500;&#x2500; 6_map.js
+</code></pre><h4 id="setting-up-tasksjson">Setting up <code>tasks.json</code></h4>
+<p>Before starting, let&apos;s set up a Node launch configuration so that we can see the result of our code in VS Code. Follow these steps. It doesn&apos;t take long. If something doesn&apos;t work for some reason and you don&apos;t have immediate assistance, find an environment where you can run ES6 in the console.</p>
+<ol>
+<li>Go ahead and go into <code>1_class.js</code>. </li>
+<li>Add <code>console.log(&apos;Classes file&apos;);</code></li>
+<li>Click on the Debug icon in the left sidebar in VS Code.</li>
+<li>Click the Settings gear.
+<img src="../../assets/4.1.1_launch_setup.PNG" alt="Launch-Setup"></li>
+<li>The top option should be <code>Node.js</code>. Choose that one.</li>
+<li>You should see the <code>launch.json</code> file.
+<img src="../../assets/4.1.1_configuration.PNG" alt="Launch-Setup"></li>
+<li><p>If you open File Explorer again, you should see a VS Code folder with <code>launch.json</code> in it.
+<img src="../../assets/4.1.1_launch.PNG" alt="Launch"></p>
+</li>
+<li><p>Go back to the Debug menu.</p>
+</li>
+<li>Open the <code>1_class.js</code> file. </li>
+<li>At the top of the Debug menu, click the Run button.</li>
+<li>A Node repl window should pop up with your console log.
+<img src="../../assets/4.1.1_run.PNG" alt="Run"></li>
+</ol>
 
                                 
                                 </section>
@@ -1070,7 +1134,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Part 4: Class Components","level":"1.6","depth":1,"next":{"title":"1.1: classes","level":"1.6.1","depth":2,"path":"concepts/3-ClassComponents/3.1-ES6-Classes.md","ref":"concepts/3-ClassComponents/3.1-ES6-Classes.md","articles":[]},"previous":{"title":"1.1: className","level":"1.5.2","depth":2,"path":"concepts/2-jsx/2.1-jsx-className.md","ref":"concepts/2-jsx/2.1-jsx-className.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"concepts/3-ClassComponents/3.0-Class-Components.md","mtime":"2018-02-05T02:52:05.489Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-06T16:28:40.255Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Part 4: Class Components","level":"1.6","depth":1,"next":{"title":"1.1: classes","level":"1.6.1","depth":2,"path":"concepts/3-ClassComponents/3.1-ES6-Classes.md","ref":"concepts/3-ClassComponents/3.1-ES6-Classes.md","articles":[]},"previous":{"title":"1.1: className","level":"1.5.2","depth":2,"path":"concepts/2-jsx/2.1-jsx-className.md","ref":"concepts/2-jsx/2.1-jsx-className.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"concepts/3-ClassComponents/3.0-Class-Components.md","mtime":"2018-02-07T02:33:07.384Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-07T02:41:45.766Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
