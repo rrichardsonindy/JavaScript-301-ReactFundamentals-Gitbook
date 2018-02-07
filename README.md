@@ -2,6 +2,13 @@
 
 What we'll build in this site.
 
+To Start Gitbook: 
+
+If you haven't installed gitbook run 
+`npm install gitbook-cli -g`
+
+Then run 
+`gitbook serve`
 
 A few notes:
 
