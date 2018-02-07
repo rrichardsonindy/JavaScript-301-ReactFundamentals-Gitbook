@@ -41,7 +41,7 @@
 * [Part 6: State](concepts/5-state/5.0-State-Demo.md)
     * [1.1: State Demo](concepts/5-state/5.1_setState-demo.md)
 
-* [Part 7: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods-summary.md)
+* [Part 7: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods-overview.md)
     * [6.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-methods.md)
     * [6.2: Mounting Methods](concepts/6-Lifecycle/6.2-birth-methods.md)
     * [6.3: Update Methods](concepts/6-Lifecycle/6.3-update-methods.md)
