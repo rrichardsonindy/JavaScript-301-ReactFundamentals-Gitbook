@@ -36,10 +36,11 @@
     * [1.3: Class Components Challenge](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge.md)
     * [1.4: Class Components Challenge Answer](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge_Answer.md)
 
-* [Part 6: Props ](concepts/4-props/4.0-props.md)
-    * [1.1: Props Demo](concepts/4-props/4.1-PropsDemo.md)
-    * [1.3: Props Mapping](concepts/4-props/4.3-props_mapping.md)
-    * [1.6: Props Business Card](concepts/4-props/4.6-Props_Business_Card.md)
+* [Part 6: Props ](concepts/5-props/1.0-props.md)
+    * [1.1: Props Demo](concepts/5-props/1.1-props_demo.md)
+    * [1.2: Props Mapping](concepts/5-props/1.2-props_mapping.md)
+    * [1.3: Props Business Card](concepts/5-props/1.3-props_business_card.md)
+    * [1.4: Props Business Card](concepts/5-props/1.4-props_codepen_challenge.md)
 
 * [Part 7: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods-overview.md)
     * [6.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-methods.md)
