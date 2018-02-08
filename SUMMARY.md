@@ -31,10 +31,10 @@
     * [1.6: map](concepts/3-JavaScript_Concepts/3.6-map.md)
 
 * [Part 5: Class Concepts]()
-    * [1.1: Simple Component](concepts/3-ClassComponents/1.1-ClassComponent_State_Simple.md)
-    * [1.2: State](concepts/1.2-ClassComponent_setState_Counter.md)
-    * [1.3: Class Components Challenge](concepts/3-ClassComponents/1.3-ClassComponent_State_Challenge.md)
-    * [1.4: Class Components Challenge Answer](concepts/3-ClassComponents/1.4-ClassComponent_State_Challenge_Answer.md)
+    * [1.1: State](concepts/4-ClassComponents/1.1-ClassComponent_State_Simple.md)
+    * [1.2: setState](concepts/4-ClassComponents/1.2-ClassComponent_setState_Counter.md)
+    * [1.3: Class Components Challenge](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge.md)
+    * [1.4: Class Components Challenge Answer](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge_Answer.md)
 
 * [Part 6: Props ](concepts/4-props/4.0-props.md)
     * [1.1: Props Demo](concepts/4-props/4.1-PropsDemo.md)
