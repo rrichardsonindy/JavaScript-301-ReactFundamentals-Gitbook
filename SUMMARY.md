@@ -40,10 +40,12 @@
     * [1.1: Props Demo](concepts/4-props/4.1-PropsDemo.md)
     * [1.3: Props Mapping](concepts/4-props/4.3-props_mapping.md)
     * [1.6: Props Business Card](concepts/4-props/4.6-Props_Business_Card.md)
- 
-* [Part 6: Lifecycle Methods]()
-    * [6.0: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods.md)
-    * [6.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-componentwillmount.md)
+
+* [Part 7: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods-overview.md)
+    * [6.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-methods.md)
+    * [6.2: Mounting Methods](concepts/6-Lifecycle/6.2-birth-methods.md)
+    * [6.3: Update Methods](concepts/6-Lifecycle/6.3-update-methods.md)
+    * [6.4: Unmount Methods](concepts/6-Lifecycle/6.4-unmount-methods.md)
 
 * [Part 3: Apps](apps/0.0-apps.md)
     * [1.0 - Small Timer Apps](apps/1.0-timer-apps.md)
