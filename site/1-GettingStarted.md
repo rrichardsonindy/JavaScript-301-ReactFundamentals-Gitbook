@@ -7,24 +7,25 @@ If something doesn’t work, please contact your instructor immediately.
 
 ### Get in a directory
 
-Go inside of your projects directory or create a new directory that is not already inside of a git repository. You could call this React-Library. We called ours JavaScript-301-ReactLibrary, but you can just call yours ReactLibrary.
+Go inside of your project's directory or create a new directory that is not already inside of a git repository. You could call this React-Library. We called ours JavaScript-301-ReactLibrary, but you can just call yours ReactLibrary.
 
 ```sh
 mkdir ReactLibrary
 cd ReactLibrary
 ```
 
-At this phase go ahead and set up a remote repository with a README.md file. Go ahead and push your README.md file to the remote.
-
-
 ### Install an instance of Create React App
 
-Open up the starter app inside of VS Code and open the terminal. We'll now go through the following steps to create your initial app, using Facebook's Create React App starter. Note that the npx command is [correct](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b). 
+Open up the starter app inside of VS Code and open the terminal. We'll now go through the following steps to create your initial app, using Facebook's Create React App starter. Note that the `npx` command on the 2nd line is [correct](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b). 
 
 ```sh
+ReactLibrary> npm install -g create-react-app
 ReactLibrary> npx create-react-app react-fundamentals
 ReactLibrary> cd react-fundamentals
 ```
+
+Now set up a remote repository on GitHub. Go ahead and `git add .` and `git commit -m "initial commit"` to capture this initial state of our project. Push this to the remote repository like normal.
+
 
 ### Run Create React App
 

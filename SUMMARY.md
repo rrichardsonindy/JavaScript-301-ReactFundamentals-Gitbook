@@ -2,12 +2,12 @@
 * [App Overview](README.md)
 
 * [Part 1: Intro and Setup](site/0-ReactRationale.md)
-    * [1.0: GettingStarted](site/1-GettingStarted.md)
+    * [1.0: Getting Started](site/1-GettingStarted.md)
     * [2.0: Sass Setup](site/2-Sass-Setup.md)
-    * [3.0: npm packages](site/3-npm-packages.md)
+    * [3.0: npm Packages](site/3-npm-packages.md)
     * [4.0: Project Layout](site/4-Project-Layout.md)
 
-* [ React Concepts](concepts/0.0-Concepts.md)
+* [React Concepts](concepts/0.0-Concepts.md)
 
 * [Part 2: Functional Components](concepts/1_FunctionalComponents/1.0-Functional-Components.md)
     * [1.1: Calling Functional Components](concepts/1_FunctionalComponents/1.1-Functional-Component-Calling.md)
@@ -36,7 +36,7 @@
     * [1.3: Class Components Challenge](concepts/3-ClassComponents/1.3-ClassComponent_State_Challenge.md)
     * [1.4: Class Components Challenge Answer](concepts/3-ClassComponents/1.4-ClassComponent_State_Challenge_Answer.md)
 
-* [Part 6: Props ](concepts/4-props/4.0-props.md)
+* [Part 6: Props](concepts/4-props/4.0-props.md)
     * [1.1: Props Demo](concepts/4-props/4.1-PropsDemo.md)
     * [1.3: Props Mapping](concepts/4-props/4.3-props_mapping.md)
     * [1.6: Props Business Card](concepts/4-props/4.6-Props_Business_Card.md)
@@ -62,9 +62,10 @@
         * [3.1 - Friend List App Component](apps/3.1-friend-list-app.md)
         * [3.2 - Friend List Component](apps/3.1-friend-list-app.md)
     * [4.0 - Movie Search Application ](apps/4.0-movie-search-app.md)
+        * [4.1 - Form Component ](apps/4.1-movie-form.md)
     * [5.0 - Bitcoin Api Application ](apps/5.0-github-search-app.md)
     * [6.0 - Github Api Application](apps/6.0-bitcoin-chart-app.md)
-    * [6.1- Github Api Application](apps/6.0-bitcoin-chart-app.md)
+        * [6.1- Github Api Application](apps/6.0-bitcoin-chart-app.md)
     * [7.0 - ](apps/7.0-youtube-api-app.md)
     * [8.0 - ](apps/8.0-google-maps-api.md)
     * [9.0 - ](apps/9.0-music-app.md)
