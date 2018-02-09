@@ -1,6 +1,6 @@
-# npm packages
+# npm Packages
 
-To expedite the set up process and to get you learning React faster, we're going to give the dependencies in package.json file and just have you run `npm install`. This will bring in a number of packages that we will use along the way. We might add more packages in the future, but this will be a good amount just for saving time. Go ahead and replace the `dependencies` and `devDependencies` sections in your `package.json` with the following code:
+To expedite the set up process and to get you learning React faster, we're going to give you the dependencies in package.json file and just have you run `npm install`. This will bring in a number of packages that we will use along the way. We might add more packages in the future, but this will be a good amount just for saving time. Go ahead and replace the `dependencies` and `devDependencies` sections in your `package.json` with the following code:
 
 ```js
 {

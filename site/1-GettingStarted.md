@@ -1,4 +1,3 @@
-TODO: Proof and Build
 # Getting Started with React
 
 To get stared with React, we'll use Create React App. Starting out with Create React App allows us to get started locally with React without having to set up build configurations. Create React App works on macOS, Windows, and Linux. We just need to have Node.js installed.
@@ -7,24 +6,31 @@ If something doesn’t work, please contact your instructor immediately.
 
 ### Get in a directory
 
-Go inside of your projects directory or create a new directory that is not already inside of a git repository. You could call this React-Library. We called ours JavaScript-301-ReactLibrary, but you can just call yours ReactLibrary.
+Go inside of your project's directory or create a new directory that is not already inside of a git repository. You could call this React-Library. We called ours JavaScript-301-ReactLibrary, but you can just call yours ReactLibrary.
 
 ```sh
 mkdir ReactLibrary
 cd ReactLibrary
 ```
 
-At this phase go ahead and set up a remote repository with a README.md file. Go ahead and push your README.md file to the remote.
-
-
 ### Install an instance of Create React App
 
-Open up the starter app inside of VS Code and open the terminal. We'll now go through the following steps to create your initial app, using Facebook's Create React App starter. Note that the npx command is [correct](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b). 
+Open up the starter app inside of VS Code and open the terminal. We'll now go through the following steps to create your initial app, using Facebook's Create React App starter. Note that the `npx` command on the 2nd line is [correct](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b). 
 
 ```sh
+ReactLibrary> npm install -g create-react-app
 ReactLibrary> npx create-react-app react-fundamentals
 ReactLibrary> cd react-fundamentals
 ```
+
+Now set up a remote repository on GitHub. Go ahead and capture this initial state of our project.
+```sh
+git init
+git add .
+git commit -m "initial commit"
+```
+Push this to the remote repository like normal.
+
 
 ### Run Create React App
 
@@ -47,12 +53,18 @@ Here's Facebook's starter screenshot for more help. Note that they use the gener
 ### App Orientation
 After creating the application in your terminal, do the following: 
 1. Open up the react-fundamentals folder that contains the app.
-2. Take a look at the files in the src folder and get an idea of where things are located. By no means do you have to know what is happening right now. Know that for the most part, we'll be working in the src folder. <br />
+2. Take a look at the files in the src folder and get an idea of where things are located. By no means do you have to know what is happening right now. Just be aware that for the most part, we'll be working in the <b>src<b> folder. <br />
 
 ### Create Directories
 As you open the app, you have a few simple set up tasks:
 
-Please right click on the <b>src</b> folder and add 4 folders: 'assets', 'components', 'constants', and 'styles'. 
+Please right click on the <b>src</b> folder and create 4 folders: 
+```
+assets
+components
+constants
+styles
+```
 
 The project will then have the following structure:
 
