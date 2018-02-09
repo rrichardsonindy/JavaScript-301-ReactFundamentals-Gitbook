@@ -23,3 +23,4 @@ TODO: Research and draft
 - It's only the view (can be a pro).
 - Have to use things like webpack, etc. for easy development.
 - Can be difficult to get your brain initially into react mode.
+- Lots of third party packages to make your life easier are almost needed. 

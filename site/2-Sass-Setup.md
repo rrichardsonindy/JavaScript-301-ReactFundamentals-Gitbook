@@ -1,11 +1,9 @@
-TODO: Proof and Build
-
 # SASS Setup
-Better to set up SASS earlier than later. This swerves us away from jumping straight into React Fundamentals, but it's just wiser and better to take the time up front to get our environment set up. Let's do it.
+Since we're going to use SASS, let's work on setting this up now. This swerves us away from jumping straight into React Fundamentals, but it's just wiser and better to take the time up front to get our environment set up. Let's do it.
 
 ### Adding a CSS Preprocessor (Sass, Less etc.)
 
-Install the command-line interface for Sass. This is recommended by Facebook, and you can read more about it on their create-react-app starter page:
+Install the command-line interface for Sass. This is recommended by Facebook, and you can read more about it on their create-react-app starter page.
 
 ```sh
 npm install --save node-sass-chokidar
@@ -25,27 +23,27 @@ In `package.json`, add the following lines to `scripts`. Again, deep understandi
 
 ### SCSS File Set up
 
-Follow the steps closely below. If you get lost, refer to the source code for this branch and go through a second/third time:
+Follow the steps below closely. If you get lost, refer to the source code for this branch and go back through this a second/third time:
 1. In `index.js`, delete the import statement for `index.css`.
 2. Delete the `index.css` file. 
 3. In `App.js`, delete all of the code in the file and replace it with this code. Go ahead and just copy and paste for now:
 
-```js
-import React, { Component } from 'react';
-import './App.css';
+  ```js
+  import React, { Component } from 'react';
+  import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Hello React</h1>
-      </div>
-    );
+  class App extends Component {
+    render() {
+      return (
+        <div>
+          <h1>Hello React</h1>
+        </div>
+      );
+    }
   }
-}
 
-export default App;
-```
+  export default App;
+  ```
 4. Keep the file, but delete all the code from the `App.css`. We will leave the file empty for now. 
 5. In the <b>/src</b> folder create an `App.scss` file. 
 6. In the <b>/styles</b> folder create two files: `_body.scss` and `_variables.scss`. 
@@ -60,7 +58,7 @@ export default App;
   }
   ```
 
-8. Copy and paste the following starter code to <b>`styles/_variables.scss`</b>. Note that these are the Eleven Fifty colors(you can use your own later)
+8. Copy and paste the following starter code to <b>`styles/_variables.scss`</b>. Note that these are the Eleven Fifty colors (you can use your own later)
 
   ```scss
   /****************** 
@@ -108,7 +106,7 @@ export default App;
 
 ### Compiling the SCSS
 
-Now we'll run watch-css to see changes in our SCSS files. Run the following command: 
+Now we'll run `watch-css` to see changes in our SCSS files. Run the following command: 
 
   ```sh
   npm run watch-css
@@ -140,7 +138,7 @@ Stop the command and restart the app with `npm start`. You should see the follow
 ![watch](../assets/2-scss-setup-blue.PNG)
 
 Go ahead and change the background back to white and the font color to black when you are done checking.
-Also, it is important to note that this code is being added to our App.css file, and all of the CSS for the app will be pipelining there.
+Also, it is important to note that this code is being added to our App.css file, and all of the CSS for the app will be compiled and piplined into that master file.
 
 ![watch](../assets/2-scss-app-file.PNG)
 
@@ -175,7 +173,7 @@ Now when we run `npm start`, it will run the app and bring our SCSS files into o
 2. Change the background color to $green, while running the app, in the `_body.scss` file.
 3. Check the browser to make sure the color changes. 
 4. Check the `App.css` file and see that the background color is now green.
-5. Change the color back when it works.
+5. Change the color back to white.
 
 
 * [3 - npm packages](3-npm-packages.md)

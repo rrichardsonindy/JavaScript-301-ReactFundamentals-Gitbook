@@ -1,26 +1,24 @@
-TODO: Proof and Build
-
-#Project Layout
+# Project Layout
 In this module, we'll set up a layout for our tutorial site/playground/sandbox. Here's what we'll be doing:
 1. Set up the basic routing for our site using React Router.
 2. Use a library called reactstrap for easy use of Bootstrap components in our project.
 3. We'll set up our initial components for structuring the app.
 4. We'll set up a small amount of styling for each of the site components.
 
-## react-router-dom
+### react-router-dom
 For our routing for this app, we'll add react-router-dom. This is an extremely common tool to use in tandem with React projects. You should already have it installed.
 
 You'll be setting up React Router momentarily, but before that, go glance through the documentation for React Router [here](https://reacttraining.com/react-router/web/guides/quick-start). As a React Developer, this is a great site to know for project set up/navigation through your page. 
 
-## reactstrap 
+### reactstrap 
 React itself is a library, a single file that we use to make React components. There are thousands of other libraries and tools that we can use in conjunction with a React application. [reactstrap](www.reactstrap.org) is a handy library for adding Bootstrap to our application. Go check it out.
 
-### bootstrap 
+### Bootstrap 
 Notice in your packages that we've already installed Bootstrap. 
 We'll start to use it in a little while for a few things.
 
 ### File Additions
-Let's add a few files and directories for the layout of our site. Please add the following to your components directory inside your site folder. With the exception of `_routes.js`, please make sure that your `.js` files are capitalized. These will be React components, and we are going to follow the convention of keeping component names capitalized:
+Let's add a few files and directories for the layout of our site. Please add the following to your 'components' directory inside your site folder. With the exception of `_routes.js`, please make sure that your `.js` files are capitalized. These will be React components, and we are going to follow the convention of keeping component names capitalized:
 
 ```
     └── src
@@ -166,7 +164,7 @@ export default class Home extends Component {
 					<hr />
 					<h1>Important Notes</h1>
 					<ul>
-						<li>The source code can be found here: <a href="https://github.com/ElevenfiftyAcademy/JavaScript-301-ReactFundamentals-Code" target="blank"><span>here</span></a></li>
+						<li>The source code can be found <a href="https://github.com/ElevenfiftyAcademy/JavaScript-301-ReactFundamentals-Code" target="blank"><span>here</span></a>.</li>
 						<li>Being component based, you can move on to the next module.</li>
 						<li>The styling is intentionally bland in some spots. Just a sandbox.</li>
 						<li>At this phase, this site is not yet responsive.</li>
