@@ -42,10 +42,10 @@
     * [1.6: Props Business Card](concepts/4-props/4.6-Props_Business_Card.md)
 
 * [Part 7: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods-overview.md)
-    * [6.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-methods.md)
-    * [6.2: Mounting Methods](concepts/6-Lifecycle/6.2-birth-methods.md)
-    * [6.3: Update Methods](concepts/6-Lifecycle/6.3-update-methods.md)
-    * [6.4: Unmount Methods](concepts/6-Lifecycle/6.4-unmount-methods.md)
+    * [7.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-methods.md)
+    * [7.2: Mounting Methods](concepts/6-Lifecycle/6.2-birth-methods.md)
+    * [7.3: Update Methods](concepts/6-Lifecycle/6.3-update-methods.md)
+    * [7.4: Unmount Methods](concepts/6-Lifecycle/6.4-unmount-methods.md)
 
 * [Part 8: Apps](apps/0.0-apps.md)
     * [1.0 - Small Timer Apps](apps/1.0-timer-apps.md)
@@ -61,7 +61,7 @@
     * [3.0 - The Friend List App ](apps/3.0-friend-list-app.md)
         * [3.1 - Friend List App Component](apps/3.1-friend-list-app.md)
         * [3.2 - Friend List Component](apps/3.1-friend-list-app.md)
-    * [4.0 - Movie Search Application ](apps/4.0-movie-search-apps.md)
+    * [4.0 - Movie Search Application ](apps/4.0-movie-search-app.md)
     * [5.0 - Bitcoin Api Application ](apps/5.0-github-search-app.md)
     * [6.0 - Github Api Application](apps/6.0-bitcoin-chart-app.md)
     * [6.1- Github Api Application](apps/6.0-bitcoin-chart-app.md)
