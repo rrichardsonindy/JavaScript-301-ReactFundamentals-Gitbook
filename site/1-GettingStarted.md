@@ -57,7 +57,7 @@ After creating the application in your terminal, do the following:
 
 ### Create Directories 
 As you open the app, you have a few simple set up tasks:
-
+ 
 Please right click on the <b>src</b> folder and create 4 folders: 
 ```
 assets
