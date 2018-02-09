@@ -1,9 +1,9 @@
 # SASS Setup
 Since we're going to use SASS, let's work on setting this up now. This swerves us away from jumping straight into React Fundamentals, but it's just wiser and better to take the time up front to get our environment set up. Let's do it.
 
-### Adding a CSS Preprocessor (Sass, Less etc.)
+### Adding a CSS Preprocessor (SASS, LESS etc.)
 
-Install the command-line interface for Sass. This is recommended by Facebook, and you can read more about it on their create-react-app starter page.
+Install the command-line interface for SASS. This is recommended by Facebook, and you can read more about it on their ```create-react-app``` starter page.
 
 ```sh
 npm install --save node-sass-chokidar
@@ -116,7 +116,7 @@ Take a look at the `App.css` file. It should be populated with contents of the `
 
 ![watch-css](../assets/2-scss-setup-red.PNG)
 
-Let's make another couple changes. let's change the background-color to $blue, text to white, and font to Belleza:
+Let's make another couple changes. let's change the ```background-color``` to ```$blue```, ```text``` to ```#fff```, and ```font``` to ```Belleza```:
   ```scss
     /****************************
     Body Section
