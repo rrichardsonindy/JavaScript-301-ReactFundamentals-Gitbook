@@ -7,19 +7,19 @@ React is a JavaScript library. Much like jQuerym it is a single file, created an
 As of today React is one of the top 3 tools for using JavaScript on the front end. Because of its speed, quick learning curve, reusability of components, and performance, React is enormously popular.
 
 ### Pros
-TODO: Make this into a list.
-Key Points:
-    Has JSX - JS that looks HTML.
-    Works in tandem with Vanilla JS.
-    Reusable Components
-    Has it's own Dev Tools
-    React Native - Native Mobile Development
-    Facebook Supported
-    Fast rendering, includes a virtual dom.
-    Awesome SEO performance.
-    Great debugging....
+- Has JSX - JS that looks HTML.
+- Works in tandem with Vanilla JS.
+- Reusable Components
+- Has it's own Dev Tools
+- React Native - Native Mobile Development
+- Facebook Supported
+- Fast rendering, includes a virtual dom.
+- Awesome SEO performance.
+- Great debugging
+- Functional Development Friendly
 
 ### Cons
 TODO: Research and draft
-Discuss licensing & MIT
-What else....
+- It's only the view (can be a pro)
+- Have to use things like webpack, etc. for easy development
+- Can be difficult to get your brain initially into react mode
