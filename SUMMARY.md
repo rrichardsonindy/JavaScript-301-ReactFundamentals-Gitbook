@@ -64,6 +64,7 @@
     * [4.0 - Movie Search Application ](apps/4.0-movie-search-app.md)
         * [4.1 - Form Component ](apps/4.1-movie-form.md)
         * [4.2 - Form Results Component ](apps/4.2-movie-form-results.md)
+        * [4.3 - Styled Components ](apps/4.3-movie-styled-components.md)
     * [5.0 - Bitcoin Api Application ](apps/5.0-github-search-app.md)
     * [6.0 - Github Api Application](apps/6.0-bitcoin-chart-app.md)
         * [6.1- Github Api Application](apps/6.0-bitcoin-chart-app.md)
