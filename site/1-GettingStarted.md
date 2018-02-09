@@ -32,7 +32,7 @@ git commit -m "initial commit"
 Push this to the remote repository like normal.
 
 
-### Run ```create-react-app```
+### Run ```create-react-app``` 
 
 After the app finishes loading, you can run the app locally by using the following command:
 
@@ -55,7 +55,7 @@ After creating the application in your terminal, do the following:
 1. Open up the react-fundamentals folder that contains the app.
 2. Take a look at the files in the src folder and get an idea of where things are located. By no means do you have to know what is happening right now. Just be aware that for the most part, we'll be working in the <b>src<b> folder. <br />
 
-### Create Directories
+### Create Directories 
 As you open the app, you have a few simple set up tasks:
 
 Please right click on the <b>src</b> folder and create 4 folders: 
