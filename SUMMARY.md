@@ -58,7 +58,7 @@
         * [2.2 - Concept App Component](apps/2.2-concept-list-app.md)
         * [2.3 - Concept Component](apps/2.3-concept.md)
         * [2.4 - Concept List Component](apps/2.4-concept-list.md)
-    * [3.0 - The Friend List App ](apps/3.0-friend-list-app.md)
+    * [3.0 - The Friend List App ](apps/3.0-friend-list.md)
         * [3.1 - Friend List App Component](apps/3.1-friend-list-app.md)
         * [3.2 - Friend List Component](apps/3.1-friend-list-app.md)
     * [4.0 - Movie Search Application ](apps/4.0-movie-search-app.md)
