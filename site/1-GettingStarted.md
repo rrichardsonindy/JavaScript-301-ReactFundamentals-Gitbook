@@ -1,6 +1,6 @@
 # Getting Started with React
 
-To get stared with React, we'll use Create React App. Starting out with Create React App allows us to get started locally with React without having to set up build configurations. Create React App works on macOS, Windows, and Linux. We just need to have Node.js installed.
+To get started with React, we'll use ```create-react-app```. Starting out with ```create-react-app``` allows us to get started locally with React without having to set up build configurations. ```create-react-app``` works on macOS, Windows, and Linux. We just need to have Node.js installed.
 
 If something doesn’t work, please contact your instructor immediately.
 
@@ -13,9 +13,9 @@ mkdir ReactLibrary
 cd ReactLibrary
 ```
 
-### Install an instance of Create React App
+### Install an instance of ```create-react-app```
 
-Open up the starter app inside of VS Code and open the terminal. We'll now go through the following steps to create your initial app, using Facebook's Create React App starter. Note that the `npx` command on the 2nd line is [correct](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b). 
+Open up the starter app inside of VS Code and open the terminal. We'll now go through the following steps to create your initial app, using Facebook's ```create-react-app``` starter. Note that the `npx` command on the 2nd line is [correct](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b). 
 
 ```sh
 ReactLibrary> npm install -g create-react-app
@@ -32,7 +32,7 @@ git commit -m "initial commit"
 Push this to the remote repository like normal.
 
 
-### Run Create React App
+### Run ```create-react-app```
 
 After the app finishes loading, you can run the app locally by using the following command:
 
