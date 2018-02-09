@@ -1,4 +1,3 @@
-TODO: Proof and Build
 # Getting Started with React
 
 To get stared with React, we'll use Create React App. Starting out with Create React App allows us to get started locally with React without having to set up build configurations. Create React App works on macOS, Windows, and Linux. We just need to have Node.js installed.
@@ -24,7 +23,13 @@ ReactLibrary> npx create-react-app react-fundamentals
 ReactLibrary> cd react-fundamentals
 ```
 
-Now set up a remote repository on GitHub. Go ahead and `git add .` and `git commit -m "initial commit"` to capture this initial state of our project. Push this to the remote repository like normal.
+Now set up a remote repository on GitHub. Go ahead and capture this initial state of our project.
+```sh
+git init
+git add .
+git commit -m "initial commit"
+```
+Push this to the remote repository like normal.
 
 
 ### Run Create React App
@@ -48,12 +53,18 @@ Here's Facebook's starter screenshot for more help. Note that they use the gener
 ### App Orientation
 After creating the application in your terminal, do the following: 
 1. Open up the react-fundamentals folder that contains the app.
-2. Take a look at the files in the src folder and get an idea of where things are located. By no means do you have to know what is happening right now. Know that for the most part, we'll be working in the src folder. <br />
+2. Take a look at the files in the src folder and get an idea of where things are located. By no means do you have to know what is happening right now. Just be aware that for the most part, we'll be working in the <b>src<b> folder. <br />
 
 ### Create Directories
 As you open the app, you have a few simple set up tasks:
 
-Please right click on the <b>src</b> folder and add 4 folders: 'assets', 'components', 'constants', and 'styles'. 
+Please right click on the <b>src</b> folder and create 4 folders: 
+```
+assets
+components
+constants
+styles
+```
 
 The project will then have the following structure:
 
