@@ -38,7 +38,10 @@
 
 * [Part 6: Props Starter](concepts/5-props/6.0-props_starter.md)
     * [6.1: Props Demo](concepts/5-props/6.1-props_demo.md)
-    * [6.2: Props Challenge](concepts/5-props/6.2-props-challenge.md)
+    * [6.2: Props Challenge #1](concepts/5-props/6.2-props-challenge.md)
+    * [6.3: Props Challenge Answer #1](concepts/5-props/6.3-props-challenge-answer.md)
+    * [6.4: Props Challenge #2](concepts/5-props/6.4-props-challenge-2.md)
+    * [6.5: Props Challenge Answer #2](concepts/5-props/6.5-props-challenge-answer-2.md)
 
 * [Part 7: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods-overview.md)
     * [7.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-methods.md)
