@@ -7,7 +7,7 @@
     * [1.3: npm Packages](site/1.3-npm-packages.md)
     * [1.4: Project Layout](site/1.4-Project-Layout.md)
 
-* [React Concepts](concepts/2.0-Concepts.md)
+* [React Concepts](concepts/2.0-React-Concepts.md)
 
 * [Part 2: Functional Components](concepts/2-Functional-Components/2.0-Functional-Components.md)
     * [2.1: Calling Functional Components](concepts/2-Functional-Components/2.1-Functional-Component-Calling.md)
@@ -18,9 +18,9 @@
     * [2.5: Challenge 2](concepts/2-Functional-Components/2.5-Functional-Component-Challenge2.md)
     * [2.5: Solution 2](concepts/2-Functional-Components/2.5-Functional-Component-Challenge2Answer.md)
 
-* [Part 3: JSX Challenge](concepts/2-jsx/2.0-jsx-challenge.md)
-    * [1.0: Challenge Answer](concepts/2-jsx/2.0-jsx-challenge-answer.md)
-    * [1.1: className](concepts/2-jsx/2.1-jsx-className.md)
+* [Part 3: JSX Challenge](concepts/3-JSX/3.0-JSX-Challenge.md)
+    * [3.1: Challenge Answer](concepts/3-JSX/3.1-JSX-Challenge-Answer.md)
+    * [3.2: className](concepts/3-JSX/3.2-JSX-className.md)
 
 * [Part 4: JavaScript Concepts](concepts/3-JavaScript_Concepts/3.0-Class-Components.md)
     * [1.1: classes](concepts/3-JavaScript_Concepts/3.1-ES6-Classes.md)
