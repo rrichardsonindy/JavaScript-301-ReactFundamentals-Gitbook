@@ -31,10 +31,10 @@
     * [4.6: map](concepts/4-JavaScript-Concepts/4.6-map.md)
 
 * [Part 5: Class Concepts]()
-    * [1.1: State](concepts/4-ClassComponents/1.1-ClassComponent_State_Simple.md)
-    * [1.2: setState](concepts/4-ClassComponents/1.2-ClassComponent_setState_Counter.md)
-    * [1.3: Class Components Challenge](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge.md)
-    * [1.4: Class Components Challenge Answer](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge_Answer.md)
+    * [5.1: State](concepts/4-ClassComponents/1.1-ClassComponent_State_Simple.md)
+    * [5.2: setState](concepts/4-ClassComponents/1.2-ClassComponent_setState_Counter.md)
+    * [5.3: Class Components Challenge](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge.md)
+    * [5.4: Class Components Challenge Answer](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge_Answer.md)
 
 * [Part 6: Props Starter](concepts/5-props/6.0-props_starter.md)
     * [6.1: Props Demo](concepts/5-props/6.1-props_demo.md)
@@ -42,6 +42,7 @@
     * [6.3: Props Challenge Answer #1](concepts/5-props/6.3-props-challenge-answer.md)
     * [6.4: Props Challenge #2](concepts/5-props/6.4-props-challenge-2.md)
     * [6.5: Props Challenge Answer #2](concepts/5-props/6.5-props-challenge-answer-2.md)
+    * [6.6: Props Map](concepts/5-props/6.6-props-map.md)
 
 * [Part 7: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods-overview.md)
     * [7.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-methods.md)
