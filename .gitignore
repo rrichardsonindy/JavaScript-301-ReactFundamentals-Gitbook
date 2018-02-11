@@ -1,3 +1,14 @@
-# Output of documentation
-_book
+
+## Dependency directory
 node_modules/
+
+# Book build output
+_book
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
+
+# Yarn files
+yarn-error.log
