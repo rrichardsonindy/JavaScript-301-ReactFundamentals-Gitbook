@@ -7,8 +7,6 @@
     * [1.3: npm Packages](site/1.3-npm-packages.md)
     * [1.4: Project Layout](site/1.4-Project-Layout.md)
 
-* [React Concepts](concepts/2.0-React-Concepts.md)
-
 * [Part 2: Functional Components](concepts/2-Functional-Components/2.0-Functional-Components.md)
     * [2.1: Calling Functional Components](concepts/2-Functional-Components/2.1-Functional-Component-Calling.md)
     * [2.2: Single Element Rule](concepts/2-Functional-Components/2.2-Functional-Component-Single-Element-Rule.md)
