@@ -23,7 +23,8 @@
     * [3.1: Challenge Answer](concepts/3-JSX/3.1-JSX-Challenge-Answer.md)
     * [3.2: className](concepts/3-JSX/3.2-JSX-className.md)
 
-* [Part 4: JavaScript Concepts](concepts/4-JavaScript-Concepts/4.0-Class-Components.md)
+* [Part 4: JavaScript Concepts]()
+    * [4.0: ES6 Overview](concepts/4-JavaScript-Concepts/4.0-Class-Components.md)
     * [4.1: classes](concepts/4-JavaScript-Concepts/4.1-ES6-Classes.md)
     * [4.2: constructors](concepts/4-JavaScript-Concepts/4.2-constructors.md)
     * [4.3: extends](concepts/4-JavaScript-Concepts/4.3-extends.md)
@@ -37,7 +38,8 @@
     * [5.3: Class Components Challenge](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge.md)
     * [5.4: Class Components Challenge Answer](concepts/4-ClassComponents/1.3-ClassComponent_State_Challenge_Answer.md)
 
-* [Part 6: Props Starter](concepts/5-props/6.0-props_starter.md)
+* [Part 6: Props Starter]()
+    * [6.0: Props Overview](concepts/5-props/6.0-props_starter.md)
     * [6.1: Props Demo](concepts/5-props/6.1-props_demo.md)
     * [6.2: Props Challenge #1](concepts/5-props/6.2-props-challenge.md)
     * [6.3: Props Challenge Answer #1](concepts/5-props/6.3-props-challenge-answer.md)
@@ -45,13 +47,15 @@
     * [6.5: Props Challenge Answer #2](concepts/5-props/6.5-props-challenge-answer-2.md)
     * [6.6: Props Map](concepts/5-props/6.6-props-map.md)
 
-* [Part 7: Lifecycle Methods](concepts/6-Lifecycle/6.0-lifecycle-methods-overview.md)
+* [Part 7: Lifecycle Methods]()
+    * [7.0: Lifecycle Overview](concepts/6-Lifecycle/6.0-lifecycle-methods-overview.md)
     * [7.1: Lifecycle Methods](concepts/6-Lifecycle/6.1-lifecycle-methods.md)
     * [7.2: Mounting Methods](concepts/6-Lifecycle/6.2-birth-methods.md)
     * [7.3: Update Methods](concepts/6-Lifecycle/6.3-update-methods.md)
     * [7.4: Unmount Methods](concepts/6-Lifecycle/6.4-unmount-methods.md)
 
-* [Part 8: Apps](apps/0.0-apps.md)
+* [Part 8: Apps]()
+    * [8.0: Apps Overview](apps/0.0-apps.md)
     * [1.0 - Small Timer Apps](apps/1.0-timer-apps.md)
         * [1.1 - Simple Timer](apps/1.1-simple-timer.md)
         * [1.2 - Clock App ](apps/1.2-clock-app.md)
@@ -81,8 +85,7 @@
     * [9.0 - ](apps/9.0-music-app.md)
     * [10.0 - ](apps/10.0-VR-app.md)
 
-* [Part 9: Project](Project.md)
-    * [1.0](0.0-Project.md)
+* [Part 9: Project]()
 
 * [Part 10: Notes]()
    * [10.1 - Resources](99-Resources.md)
