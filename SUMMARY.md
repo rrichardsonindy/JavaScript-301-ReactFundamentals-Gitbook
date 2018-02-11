@@ -1,5 +1,5 @@
 # Summary
-* [App Overview](README.md)
+* [Part 0: App Overview](README.md)
 
 * [Part 1: Intro and Setup]()
     * [1.0: Rationale & Overview](site/1.0-ReactRationale.md)
