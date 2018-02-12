@@ -5,7 +5,7 @@
     * [1.0: Rationale & Overview](site/1.0-ReactRationale.md)
     * [1.1: Getting Started](site/1.1-GettingStarted.md)
     * [1.2: Sass Setup](site/1.2-Sass-Setup.md)
-    * [1.3: npm Packages](site/1.3-npm-packages.md)
+    * [1.3: npm Packages](site/1.3-npm-Packages.md)
     * [1.4: Project Layout](site/1.4-Project-Layout.md)
 
 * [Part 2: Functional Components]()
