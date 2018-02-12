@@ -85,7 +85,7 @@
     * [7.0 - Bitcoin Api Challenge ](apps/07-bitcoin-app/7.0-bitcoin-api-app.md)
     * [8.0 - Google Maps Api Challenge](apps/08-google-maps-app/8.0-google-maps-api.md)
     * [9.0 - Sound Cloud App Challenge](apps/09-music-app/9.0-music-app-challenge.md)
-    * [10.0 - VR App Challenge](apps/10-vr-app/10.0-VR-app.md)
+    * [10.0 - VR App Challenge](apps/10-vr-app/10.0-vr-app.md)
 
 * [Part 9: Project](project/01-capstone-project.md)
 
