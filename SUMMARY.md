@@ -68,6 +68,7 @@
     * [3.0 - The Friend List App ](apps/03-friend-list-app/3.0-friend-list-overview.md)
         * [3.1 - Friend List App Component](apps/03-friend-list-app/3.1-friend-list-app-component.md)
         * [3.2 - Friend List Component](apps/03-friend-list-app/3.2-friend-list.md)
+        * [3.3 - Remove Friend](apps/03-friend-list-app/3.3-remove-friends.md)
     * [4.0 - Movie Search Application ](apps/04-movie-app/4.0-movie-search-app.md)
         * [4.1 - Form Component ](apps/04-movie-app/4.1-movie-form.md)
         * [4.2 - Form Results Component ](apps/04-movie-app/4.2-movie-form-results.md)
