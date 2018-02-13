@@ -5,7 +5,7 @@
     * [1.0: Rationale & Overview](site/1.0-ReactRationale.md)
     * [1.1: Getting Started](site/1.1-GettingStarted.md)
     * [1.2: Sass Setup](site/1.2-Sass-Setup.md)
-    * [1.3: npm Packages](site/1.3-npm-packages.md)
+    * [1.3: npm Packages](site/1.3-npm-Packages.md)
     * [1.4: Project Layout](site/1.4-Project-Layout.md)
 
 * [Part 2: Functional Components]()
@@ -68,6 +68,7 @@
     * [3.0 - The Friend List App ](apps/03-friend-list-app/3.0-friend-list-overview.md)
         * [3.1 - Friend List App Component](apps/03-friend-list-app/3.1-friend-list-app-component.md)
         * [3.2 - Friend List Component](apps/03-friend-list-app/3.2-friend-list.md)
+        * [3.3 - Remove Friend](apps/03-friend-list-app/3.3-remove-friends.md)
     * [4.0 - Movie Search Application ](apps/04-movie-app/4.0-movie-search-app.md)
         * [4.1 - Form Component ](apps/04-movie-app/4.1-movie-form.md)
         * [4.2 - Form Results Component ](apps/04-movie-app/4.2-movie-form-results.md)
