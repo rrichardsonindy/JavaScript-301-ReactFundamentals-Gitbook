@@ -83,6 +83,9 @@
         * [6.3 - Github API Card](apps/06-github-app/6.3-github-api-card.md)
         * [6.4 - Github API Card Form](apps/06-github-app/6.4-github-api-cardform.md)
         * [6.5 - Github API Card List](apps/06-github-app/6.5-github-api-cardlist.md)
+        * [6.6 - Github API Search](apps/06-github-app/6.6-github-api-search.md)
+        * [6.7 - Github API Challenge](apps/06-github-app/6.7-github-api-challenge.md)
+
     * [7.0 - Bitcoin Api Challenge ](apps/07-bitcoin-app/7.0-bitcoin-api-app.md)
     * [8.0 - Google Maps Api Challenge](apps/08-google-maps-app/8.0-google-maps-api.md)
     * [9.0 - Sound Cloud App Challenge](apps/09-music-app/9.0-music-app-challenge.md)
