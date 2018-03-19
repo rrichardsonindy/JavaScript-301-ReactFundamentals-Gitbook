@@ -12,6 +12,7 @@
     * [2.4: super](concepts/4-JavaScript-Concepts/4.4-super.md)
     * [2.5: interpolation](concepts/4-JavaScript-Concepts/4.5-interpolation.md)
     * [2.6: map](concepts/4-JavaScript-Concepts/4.6-map.md)
+    * [2.7: filter](concepts/4-JavaScript-Concepts/4.6-filter.md)
 
 * [Part 3: Functional Components]()
     * [3.0: Functional Components Overview](concepts/2-Functional-Components/2.0-Functional-Components.md)
