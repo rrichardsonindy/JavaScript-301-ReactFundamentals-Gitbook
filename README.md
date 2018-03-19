@@ -19,11 +19,11 @@ Here's where we'll be going:
 
 2. *Orientation:* Walk through Part 1 of this Gitbook in an instructor led group. We'll discuss the code that you've cloned and tactics for getting started with a React application. If you want to know how to create a similar app in the future, we have complete directions for how to set up the starter in Part 11.
 
-3. *Fundamentals*: In Parts 2-7 we'll start by covering the basics of React. We'll write small chunks of code, and you'll make the beginnings of your own online tutorial application. The fundamentals project can be a nice portfolio project that you can eventually make your own. 
+3. *Fundamentals*: In Parts 2-7 we'll start with a solid once over of important concepts in ES6. Then we'll proceed by covering the basics of React. We'll write small chunks of code, and you'll make the beginnings of your own online tutorial application. The fundamentals project can be a nice portfolio project that you can eventually make your own. 
 
 4. *Mini Apps*: In Part 8, we will move into making mini-applications to help you reinforce important topics, give you some challenges, finish up on your main project, and also include tons of helpful resources for you to continue learning.
 
-5. *Big App*: In Part 9 you will work on the big project application to be completed for the Blue Badge and beyond. We will talk more about the requirements for this project this week.
+5. *Big App*: In Part 9 you will work on the big project application to be completed for the Blue Badge and beyond. We will talk more about the requirements for this project in the coming weeks.
 
 
 ### We are excited
@@ -32,36 +32,15 @@ We are pumped!!!
 We hope you have a lot of fun with the applications within this application that will help you build your bigger application. *Inception* anyone?
 
 ### Feedback:
-
-While we've taught React fundamentals many times in the past, this is our first edition of this Gitbook. We are happy about it and have worked hard so that you can have the best starting resource possible. We have tested the code, read through it, vetted resources, and retested it. But we know there will still be typos and bugs. There are a lot of moving parts here.
+We are constantly improving our curriculum and materials, so there may be some material in this book that you are the first to use in the classroom. We have tested the code, read through it, vetted resources, and retested it. But we know there may still be typos and bugs.
 
 Please use the following guidelines for feedback:
 
-*typos*: If you see a typo, you don't have to scream it from the rooftop. Just post a message on the 301-feedback channel. Give us the Part #, module number and approximate location, please. 
+*typos*: If you see a typo, you don't have to scream it from the rooftop. Just slack one of your instructors, preferably Carolyn. Give us the Part #, module number and approximate location, please. 
 
-*bugs*: If you think you've found a bug, let an instructor know before posting to the whole group. Let us look. Then, we'll give you the go ahead to post, and we will help fix it.
+*bugs*: If you think you've found a bug, let an instructor know.
 
 *suggestions*: Send Paul a note if you have good ideas or ways that this could be improved. 
-
-### To Start Gitbook: 
-
-We'd prefer if you read this book online for now. 
-
-However, we'll also give you the code for running the book locally later in the week.
-
-When we are done in a few weeks, we'll open source the finished code for this book, and you can have your own local edition of it. 
-
-1. Clone the Gitbook
-This will be available later this week [here](https://github.com/ElevenfiftyAcademy/JavaScript-301-ReactFundamentals-Gitbook). 
-
-2. Install the Gitbook CLI: 
-`npm install gitbook-cli -g`
-
-3. Then run: 
-`gitbook install`
-
-4. Then run:
-`gitbook serve`
 
 
 ### Next section
