@@ -3,10 +3,6 @@
 
 * [Part 1: Intro and Setup]()
     * [1.0: Rationale & Overview](site/1.0-ReactRationale.md)
-    * [1.1: Getting Started](site/1.1-GettingStarted.md)
-    * [1.2: Sass Setup](site/1.2-Sass-Setup.md)
-    * [1.3: npm Packages](site/1.3-npm-Packages.md)
-    * [1.4: Project Layout](site/1.4-Project-Layout.md)
 
 * [Part 2: Functional Components]()
     * [2.0: Functional Components Overview](concepts/2-Functional-Components/2.0-Functional-Components.md)
@@ -97,3 +93,9 @@
 * [Part 10: Notes]()
    * [10.1 - Resources](99-Resources.md)
    * [10.2 - Troubleshooting](99-ErrorHandling.md)
+
+* [Part 11: Setup]()
+    * [11.1: Getting Started](site/1.1-GettingStarted.md)
+    * [11.2: Sass Setup](site/1.2-Sass-Setup.md)
+    * [11.3: npm Packages](site/1.3-npm-Packages.md)
+    * [11.4: Project Layout](site/1.4-Project-Layout.md)

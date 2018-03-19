@@ -1,4 +1,5 @@
-# React Fundamentals - Version 3.0
+![efa](/assets/efalogo.png)
+# React Fundamentals
 
 ### Introduction
 
@@ -16,7 +17,7 @@ Here's where we'll be going:
 
 1. *Clone*: Go ahead and clone our starter application, if you haven't already. You can find the repo and set up instructions in the README.md file [here](https://github.com/ElevenfiftyAcademy/JavaScript-301-ReactStarter).
 
-2. *Orientation:* Walk through Part 1 of this Gitbook in an instructor led group. We'll discuss the code that you've cloned and tactics for getting started with a React application. We have instructions that you'll look through for now, but you'll have these for when you need to create your own app from scratch. All the directions are there.
+2. *Orientation:* Walk through Part 1 of this Gitbook in an instructor led group. We'll discuss the code that you've cloned and tactics for getting started with a React application. If you want to know how to create a similar app in the future, we have complete directions for how to set up the starter in Part 11.
 
 3. *Fundamentals*: In Parts 2-7 we'll start by covering the basics of React. We'll write small chunks of code, and you'll make the beginnings of your own online tutorial application. The fundamentals project can be a nice portfolio project that you can eventually make your own. 
 

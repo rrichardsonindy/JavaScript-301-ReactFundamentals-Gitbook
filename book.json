@@ -1,3 +1,8 @@
 {
-    "plugins": ["expandable-chapters"]
+    "plugins": ["my-theme", "expandable-chapters"],
+    "pluginsConfig": {
+        "my-theme": {
+            "font-family": "sans"
+        }
+    }
 }
