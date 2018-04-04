@@ -87,6 +87,13 @@
         * [7.7 - Github API Challenge](apps/06-github-app/6.7-github-api-challenge.md)
 
     * [8.0 - Bitcoin Api Challenge ](apps/07-bitcoin-app/7.0-bitcoin-api-app.md)
+        * [8.1 - Bitcoin API Setup](apps/07-bitcoin-app/7.1-bitcoin-api-setup.md)
+        * [8.2 - Bitcoin API Fetch](apps/07-bitcoin-app/7.2-bitcoin-api-fetch.md)
+        * [8.3 - Bitcoin API Line Chart](apps/07-bitcoin-app/7.3-bitcoin-api-linechart.md)
+        * [8.4 - Bitcoin API Fetching Data](apps/07-bitcoin-app/7.4-bitcoin-api-fetchingData.md)
+        * [8.5 - Bitcoin API Info Box](apps/07-bitcoin-app/7.5-bitcoin-api-infobox.md)
+        * [8.6 - Bitcoin API Completed Code](apps/07-bitcoin-app/7.6-bitcoin-api-completedCode.md)
+
     * [9.0 - Google Maps Api Challenge](apps/08-google-maps-app/8.0-google-maps-api.md)
     * [10.0 - Sound Cloud App Challenge](apps/09-music-app/9.0-music-app-challenge.md)
     * [11.0 - VR App Challenge](apps/10-vr-app/10.0-vr-app.md)
