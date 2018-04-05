@@ -86,7 +86,7 @@
         * [7.6 - Github API Search](apps/06-github-app/6.6-github-api-search.md)
         * [7.7 - Github API Challenge](apps/06-github-app/6.7-github-api-challenge.md)
 
-    * [8.0 - Bitcoin Api Challenge ](apps/07-bitcoin-app/7.0-bitcoin-api-app.md)
+    * [8.0 - Bitcoin Api Application ](apps/07-bitcoin-app/7.0-bitcoin-api-app.md)
         * [8.1 - Bitcoin API Setup](apps/07-bitcoin-app/7.1-bitcoin-api-setup.md)
         * [8.2 - Bitcoin API Fetch](apps/07-bitcoin-app/7.2-bitcoin-api-fetch.md)
         * [8.3 - Bitcoin API Line Chart](apps/07-bitcoin-app/7.3-bitcoin-api-linechart.md)
