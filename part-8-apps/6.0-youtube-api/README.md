@@ -1,0 +1,41 @@
+# 6.0 - YouTube Api
+
+All thanks, up front, to Stephen Grider for the core functionality of this app: the YouTube Search and the `YTSearch` npm package. If you want to check out an amazing React course, check out any one of his courses on Udemy. He often has his work on sale, and he is an incredible instructor.
+
+Here we use the part of his YouTube search application to build something original.
+
+## Analysis
+
+One of the best ways to learn to code is to take things apart. A lot of developers will tell you that they often have to reverse engineer something to understand how it is working. Tactics to understand the dynamics of an application might include commenting out small and large chunks of code, writing console statements, setting breakpoints, adding more code to a component, researching phrases that aren't clear, and talking to others.
+
+One task you will have for this challenge is to break this app apart and understand how it's working.
+
+## Challenge
+
+After you understand the app, we'd like you to do something original with the data coming back from a search. Here's what you should do for this challenge:
+
+Objective: _Make something original. Show a different and interesting way to show the props coming back from the search._
+
+## Tasks
+
+1. Figure out how to get an API KEY from YouTube and add it into the API\_KEY variable in the `Video.js` component. Help each other figure this out. 
+2. Figure out how each component is working by adding `console.log` statements in the app. 
+3. Add general comments in the app to note how it is working.
+4. Figure out what kind of data is available as props. 
+5. Attempt to do something with more dynamic with those props.
+
+## Setup
+
+Here's your folder/file structure.
+
+```text
+    └── src
+        └── assets
+        └── components
+                └── apps
+                    └── YouTubeApi
+                        └── SearchBar.js
+                        └── Video.js
+                        └── VideoDetail.js
+```
+
