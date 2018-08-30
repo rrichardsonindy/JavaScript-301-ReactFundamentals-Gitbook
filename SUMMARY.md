@@ -94,8 +94,3 @@
 * [Part 10: Notes](part-10-notes/README.md)
   * [10.1 - Resources](part-10-notes/10.1-resources.md)
   * [10.2 - Troubleshooting](part-10-notes/10.2-troubleshooting.md)
-* [Part 11: Setup](part-11-setup/README.md)
-  * [11.1: Getting Started](part-11-setup/11.1-getting-started.md)
-  * [11.2: Sass Setup](part-11-setup/11.2-sass-setup.md)
-  * [11.3: npm Packages](part-11-setup/11.3-npm-packages.md)
-  * [11.4: Project Layout](part-11-setup/11.4-project-layout.md)
