@@ -31,14 +31,10 @@ Next, we need to configure out links/routes , so first inside of `Sidebar.js` in
 <li><Link to="/movie">Movie Search App</Link></li>
 ```
 
-In `_routes.js` add the following route.
+In `Sidebar.js` add the following route.
 
 ```javascript
- {
-      path: '/movie',
-      exact: true,
-      main: () => <MovieSearchApp />
-    },
+<Route exact path="/movie"><MovieSearchApp /></Route>
 ```
 
 You'll also need to set up the import for the `MovieSearchApp` component:

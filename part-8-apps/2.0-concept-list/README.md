@@ -16,14 +16,10 @@ To get started, we need to set up our routing to be able to access the applicati
 <li><Link to="/reactconceptlist">React Concepts Checklist</Link></li>
 ```
 
-In `_routes.js` add the following route:
+In `Sidebar.js` add the following route:
 
 ```javascript
-    {
-      path: '/reactconceptlist',
-      exact: true,
-      main: () => <ReactConceptsApp />
-    },
+<Route exact path="/reactconceptlist"><ReactConceptsApp /></Route>
 ```
 
 Don't forget to add the import for the component!

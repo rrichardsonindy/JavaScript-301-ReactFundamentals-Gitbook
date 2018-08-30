@@ -30,21 +30,15 @@ Inside of our timer-apps folder, we're going to create our components for this t
 
 In this application, we're going to learn more lifecycle methods, separating concerns in different components, and utilize some more ES6 functionality.
 
-To get started we need to adjust our `_routes.js` and `Sidebar.js`, so that we have a way of navigating to our new mini-react app.
+To get started we need to adjust our `Sidebar.js`, so that we have a way of navigating to our new mini-react app.
 
-In your `_routes.js` file we need to add a route to our TimePiecesApp. Underneath the rest of your routes, you'll need to add one for the timer apps.
+In your `Sidebar.js` file we need to add a route to our TimePiecesApp. Underneath the rest of your routes, you'll need to add one for the timer apps.
 
 ```javascript
-    {
-      path: '/timer',
-      exact: true,
-      main: () => <TimePiecesApp />
-    },
+<Route exact path="/timer"><TimePiecesApp /></Route>
 ```
 
-Challenge: Go ahead set up the path by yourself. Hint: remember that the import path will be different now. We're no longer in the concepts directory.
-
-In your `Sidebar.js`, you'll need to add a way to utilize this new route. Add the following to the file, underneath your other links.
+In your `Sidebar.js`, you'll need to add a way to utilize this new route. Add the following to the file, underneath your other links. Don't forget to import TimePiecesApp as well!
 
 ```javascript
     <li><Link to="/timer">Timers</Link></li>
