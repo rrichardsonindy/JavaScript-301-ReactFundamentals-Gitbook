@@ -2,8 +2,9 @@
 
 * [Part 0: App Overview](README.md)
 * [Part 1: Intro to React](part-1-intro-and-setup/README.md)
-  * [1.0: Setup](part-1-intro-and-setup/1.0-rationale-and-overview.md)
+  * [1.0: Packages Setup](part-1-intro-and-setup/1.0-rationale-and-overview.md)
   * [1.1: Project Setup](part-1-intro-and-setup/1.1-project-setup.md)
+  * [1.2: React Router Dom](part-1-intro-and-setup/1.2-react-router-dom.md)
 * [Part 2: JavaScript Concepts](part-2-javascript-concepts/README.md)
   * [2.0: ES6 Overview](part-2-javascript-concepts/2.0-es6-overview.md)
   * [2.1: classes](part-2-javascript-concepts/2.1-classes.md)
