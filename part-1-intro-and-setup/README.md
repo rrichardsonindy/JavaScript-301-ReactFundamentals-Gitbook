@@ -1,18 +1,20 @@
-# Part 1: Intro
+# Part 1: Intro to React
 
-# 1.0: Rationale & Overview
+## Part 1: Intro
 
-### What is React?
+## 1.0: Rationale & Overview
+
+#### What is React?
 
 React is a JavaScript library. It is a single file, created and maintained by Facebook. It is Component-based, which means that you can use Components to describe your desired outcome for very specific areas on the webpage. For instance, we might have a Component for nav, footer, main, counter, etc.
 
-### Why React?
+#### Why React?
 
 As of today React is one of the top 3 tools for using JavaScript on the front end. Because of its speed, quick learning curve, reusability of components, and performance, React is enormously popular.
 
 Here are a few pros and cons of using React:
 
-### Pros
+#### Pros
 
 * Uses JSX - JS that looks like HTML.
 * Works in tandem with vanilla JS.
@@ -25,7 +27,7 @@ Here are a few pros and cons of using React:
 * Great debugging.
 * Functional development friendly.
 
-### Cons
+#### Cons
 
 * It only deals with the view \(can be a pro\).
 * Have to use things like webpack, etc. for easy development.
@@ -33,7 +35,7 @@ Here are a few pros and cons of using React:
 * Lots of third party packages to make your life easier are needed.
 * Facebook supported. More on this in class. 
 
-## Project Overview: Fundamental React Concepts
+### Project Overview: Fundamental React Concepts
 
 Some of the great things we'll study in this part include the following:
 

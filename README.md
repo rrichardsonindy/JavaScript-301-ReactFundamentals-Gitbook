@@ -36,11 +36,11 @@ We are constantly improving our curriculum and materials, so there may be some m
 
 Please use the following guidelines for feedback:
 
-_typos_: If you see a typo, you don't have to scream it from the rooftop. Just slack one of your instructors, preferably Carolyn. Give us the Part \#, module number and approximate location, please.
+_typos_: If you see a typo, you don't have to scream it from the rooftop. Just slack one of your instructors, preferably Autumn. Give us the Part \#, module number and approximate location, please.
 
 _bugs_: If you think you've found a bug, let an instructor know.
 
-_suggestions_: Send Paul a note if you have good ideas or ways that this could be improved.
+_suggestions_: Send Tyler a note if you have good ideas or ways that this could be improved.
 
 ### Next section
 
